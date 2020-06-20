@@ -1,11 +1,9 @@
 package data.model;
 
-import java.util.Optional;
-
 public class Gobblegum {
 
     public enum Type {
-        Classic, Whimsical, Mega, RareMega, UltraRareMega
+        Default, Normal, Whimsical, Mega, RareMega, UltraRareMega
     }
 
     public enum Color {
@@ -13,10 +11,9 @@ public class Gobblegum {
     }
 
     private String name;
-    private Type type;
     private Color color;
+    private Type type;
+    private String activation;
     private String description;
     private String imageURL;
-    private String unlockCriteria;
-
 }
