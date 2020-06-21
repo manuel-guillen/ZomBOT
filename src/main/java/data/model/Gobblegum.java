@@ -1,6 +1,9 @@
 package data.model;
 
+import java.util.Map;
 import java.util.Objects;
+
+import static java.util.Map.entry;
 
 public class Gobblegum {
 
@@ -11,6 +14,12 @@ public class Gobblegum {
     public enum Color {
         Blue, Orange, Green, Purple
     }
+
+    public static final Map<Color, java.awt.Color> GOBBLEGUM_COLOR_MAP = Map.ofEntries(
+            entry(Gobblegum.Color.Blue, new java.awt.Color(85, 185, 230)),
+            entry(Gobblegum.Color.Green, new java.awt.Color(75, 215, 75)),
+            entry(Gobblegum.Color.Purple, new java.awt.Color(155, 90, 190)),
+            entry(Gobblegum.Color.Orange, new java.awt.Color(255, 160, 75)));
 
     private String name;
     private Color color;
@@ -70,5 +79,9 @@ public class Gobblegum {
     @Override
     public String toString() {
         return name + " - [" + type + "] (" + activation + ") " + description;
+    }
+
+    public java.awt.Color getTrueColor() {
+        return GOBBLEGUM_COLOR_MAP.get(color);
     }
 }

@@ -1,5 +1,6 @@
 package main;
 
+import listener.ZomBOTListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
@@ -11,6 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException {
         JDA jda = JDABuilder.createDefault(TOKEN).build();
+        jda.addEventListener(new ZomBOTListener());
     }
 
 }
