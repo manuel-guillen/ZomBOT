@@ -7,6 +7,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,10 +22,19 @@ public class GobblegumDataGenerator {
 
     private static final String FULL_SCALE_SENTINEL = "/latest";
 
-    public static void main(String[] args) throws IOException {
-        Document doc = Jsoup.connect(SOURCE_URL).get();
+    public static final List<Gobblegum> GOBBLEGUM_LIST = downloadGobblegumData();
+
+    public static List<Gobblegum> downloadGobblegumData() {
+        Document doc;
+        try {
+            doc = Jsoup.connect(SOURCE_URL).get();
+        } catch (IOException e) {
+            throw new RuntimeException("Could not connect to web source.");
+        }
         Elements elements = doc.select(MAIN_ELEMENT_SELECTOR);
         Elements thumbnails = doc.select(THUMBNAIL_SELECTOR);
+
+        List<Gobblegum> list = new ArrayList<Gobblegum>(70);
 
         for (Element e : elements) {
             Element span = e.child(0);
@@ -63,7 +74,11 @@ public class GobblegumDataGenerator {
             String imageURL = selection.first().selectFirst("img").attr("src");
             int trimLength = imageURL.lastIndexOf(FULL_SCALE_SENTINEL) + FULL_SCALE_SENTINEL.length();
             imageURL = imageURL.substring(0, trimLength);
+
+            list.add(new Gobblegum(name, color, type, activation, description, imageURL));
         }
+
+        return list;
     }
 
 }
