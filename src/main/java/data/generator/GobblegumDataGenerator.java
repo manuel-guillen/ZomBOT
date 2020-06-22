@@ -7,10 +7,13 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class GobblegumDataGenerator {
 
@@ -52,9 +55,19 @@ public class GobblegumDataGenerator {
             Matcher m = DESCR_PATTERN.matcher(e.text());
             m.matches();
 
-            String activation = m.group("activation");
-            activation = (activation != null) ? activation.trim() : "Auto-activated.";
-            String description = m.group("description").trim();
+            String activation = m.group("activation"),
+                    description = m.group("description");
+
+            if (activation == null) {
+                int i = description.trim().indexOf('.');
+                activation = description.substring(0, i);
+                description = description.substring(i+1);
+            }
+
+            activation = activation.trim();
+            description = description.trim();
+
+            description = shortenDescription(description);
 
             Gobblegum.Type type;
             switch (e.parent().previousElementSiblings().select("h4").first().child(0).text()) {
@@ -79,6 +92,25 @@ public class GobblegumDataGenerator {
         }
 
         return map;
+    }
+
+    private static String shortenDescription(String description) {
+        int length = description.length();
+
+        if (length < 150)
+            return description;
+
+        String[] split = description.split(" ?[\\(\\.\\)] ?");
+        Stream<String> sentences = Arrays.stream(split);
+
+        if (length < 176)
+            sentences = sentences.limit(split.length - 1);      // Remove last sentence
+        else if (length < 214)
+            sentences = sentences.limit(2);                     // Keep only first two sentences
+        else
+            sentences = sentences.limit(1);                     // Keep only first sentence
+
+        return sentences.collect(Collectors.joining(". "));
     }
 
 }
