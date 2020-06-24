@@ -1,5 +1,7 @@
 package data.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Map;
 import java.util.Objects;
 
@@ -81,7 +83,13 @@ public class Gobblegum {
         return name + " - [" + type + "] (" + activation + ") " + description;
     }
 
+    @JsonIgnore
     public java.awt.Color getTrueColor() {
         return GOBBLEGUM_COLOR_MAP.get(color);
+    }
+
+    @JsonIgnore
+    public String getSimplifiedName() {
+        return name.replaceAll("[^ \\w]","").toLowerCase();
     }
 }

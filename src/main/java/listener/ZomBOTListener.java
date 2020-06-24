@@ -1,7 +1,7 @@
 package listener;
 
-import data.generator.GobblegumDataGenerator;
 import data.model.Gobblegum;
+import data.sources.GobblegumDataSource;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
@@ -18,8 +18,7 @@ public class ZomBOTListener extends ListenerAdapter {
         String message = event.getMessage().getContentRaw();
         if (message.startsWith(PREFIX)) {
             message = message.substring(PREFIX.length()).trim().toLowerCase();
-
-            Gobblegum g = GobblegumDataGenerator.GOBBLEGUM_MAP.get(message.replaceAll("[^A-Za-z0-9 ]", ""));
+            Gobblegum g = GobblegumDataSource.getData().get(message.replaceAll("[^A-Za-z0-9 ]", ""));
             if (g != null) {
                 TextChannel channel = event.getChannel();
                 EmbedBuilder eb = new EmbedBuilder();
