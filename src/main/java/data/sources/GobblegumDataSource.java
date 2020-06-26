@@ -1,5 +1,6 @@
 package data.sources;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import data.model.Gobblegum;
@@ -60,7 +61,7 @@ public class GobblegumDataSource {
     }
 
     public static void populateDataFromJSONFile(File inputJSONFile) throws IOException {
-        Set<Gobblegum> values = JSON_MAPPER.readValue(inputJSONFile, Set.class);
+        Set<Gobblegum> values = JSON_MAPPER.readValue(inputJSONFile, new TypeReference<>(){});
         data = values.stream().collect(MAP_COLLECTOR);
     }
 

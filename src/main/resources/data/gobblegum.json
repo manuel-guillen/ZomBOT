@@ -1,442 +1,442 @@
 [ {
-  "name" : "In Plain Sight",
-  "color" : "Purple",
-  "type" : "Default",
-  "activation" : "Activated, 2x Activations, 10 seconds each",
-  "description" : "All zombies ignore the player.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/1c/In_Plain_Sight_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Burned Out",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Activates Immediately, Lasts 2 Hits",
-  "description" : "The next time the player takes damage, nearby zombies burst into fire.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/80/Burned_Out_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Wall Power",
-  "color" : "Orange",
-  "type" : "RareMega",
-  "activation" : "Activates Immediately, Lasts until the player's next wall-buy gun purchase",
-  "description" : "The next wall weapon purchased becomes Pack-a-Punched.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2d/Wall_Power_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Ephemeral Enhancement",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "2x Activations, 60 Seconds Each",
-  "description" : "Turns the weapon in the player's hands into the Pack-A-Punched version. Players should be careful to remember that it only lasts for 60 seconds.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7d/Ephemeral_Enhancement_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Reign Drops",
-  "color" : "Purple",
-  "type" : "UltraRareMega",
-  "activation" : "Activated, 2 activations",
-  "description" : "Spawns all the core power-ups at once",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6a/Reign_Drops_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Near Death Experience",
-  "color" : "Blue",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately, Lasts 3 full rounds",
-  "description" : "Revive, or be revived simply by being near other players. Revived players keep all their perks, including Quick Revive",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/48/Near_Death_Experience_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Immolation Liquidation",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "3x Activations",
-  "description" : "Spawns a Fire Sale Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/96/Immolation_Liquidation_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Kill Joy",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "2x Activations",
-  "description" : "Spawns an Insta-Kill Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/73/Kill_Joy_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Soda Fountain",
-  "color" : "Orange",
-  "type" : "RareMega",
-  "activation" : "Auto-activates when buying a perk, 5 Activations",
-  "description" : "Perk purchase limit is ignored. Every perk you buy, a random perk is awarded along with the perk you bought.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/5e/Soda_Fountain.png/revision/latest"
-}, {
-  "name" : "Crate Power",
-  "color" : "Orange",
-  "type" : "RareMega",
-  "activation" : "Auto-activates next time you take a gun from the magic box",
-  "description" : "The next gun taken from the magic box comes Pack-a-Punched.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3b/Crate_Power_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Always Done Swiftly",
-  "color" : "Blue",
-  "type" : "Default",
-  "activation" : "Activates Immediately, Lasts 3 Rounds",
-  "description" : "Walk faster when aiming. Raise and lower your weapon to aim more quickly.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/31/Always_Done_Swiftly_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Newtonian Negation",
-  "color" : "Green",
-  "type" : "Whimsical",
-  "activation" : "Activates Immediately, Lasts 25 minutes",
-  "description" : "Zombies killed fall straight up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/da/Newtonian_Negation_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Disorderly Combat",
-  "color" : "Green",
-  "type" : "Mega",
-  "activation" : "Activates Immediately, Last for 5 minutes",
-  "description" : "Gives a random gun every 10 seconds. It should be noted that if the player uses this while holding a Pack-a-Punched weapon, all subsequent weapons will be Pack-a-Punched as well",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/ad/Disorderly_Combat_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Temporal Gift",
-  "color" : "Blue",
-  "type" : "RareMega",
-  "activation" : "Activates Immediately, Lasts 1 round",
-  "description" : "Power ups last longer (extra 30 seconds).",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7d/Temporal_Gift_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Lucky Crit",
-  "color" : "Blue",
+  "name" : "Arsenal Accelerator",
+  "description" : "Charge the player's special weapon faster",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/f/f2/Arsenal_Accelerator_GobbleGum_BO3.png/revision/latest",
   "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 1 full round",
-  "description" : "Improves your chances of activating an Alternate Ammo Type, like Turned, Dead Wire, etc.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3e/Lucky_Crit_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Anywhere But Here!",
-  "color" : "Purple",
-  "type" : "Normal",
-  "activation" : "Activated, 2x Activations",
-  "description" : "Instantly teleport to a random location. A concussive blast knocks away any nearby zombies, keeping the player safe.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e0/Anywhere_But_Here.png/revision/latest"
-}, {
-  "name" : "Slaughter Slide",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Auto-activates when sliding, 6x Activations",
-  "description" : "Create 2 lethal explosions by sliding.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2c/Slaughter_Slide_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Mind Blown",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "3x Activations",
-  "description" : "Gib the heads of all the zombies you can see, killing them.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a9/Mind_Blown_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Fear in Headlights",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "1x Activation, 2 minutes",
-  "description" : "Zombies seen by the player will not move. Players should remember this will not affect zombies that are behind them.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/58/Fear_in_Headlights_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Respin Cycle",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "2x Activations",
-  "description" : "Re-spins the weapons in the Mystery Box after it has been activated.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/26/Respin_Cycle_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Profit Sharing",
   "color" : "Green",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately, Lasts 10 minutes",
-  "description" : "Points you earn are also recieved by nearby players and vice versa.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/0f/Profit_Sharing_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Cache Back",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "1x Activation",
-  "description" : "Spawns a Max Ammo Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/90/Cache_Back_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "I'm Feeling Lucky",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "2x Activations",
-  "description" : "Spawns a random Power-Up in the map.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8d/I%27m_Feeling_Lucky_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Unquenchable",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Auto-Activates when the player has 4 Maximum Perks",
-  "description" : "Can buy an extra Perk-a-Cola. The perk slot will be lost should the player go down.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d3/Unquenchable_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Extra Credit",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "Activated, 4 Activations",
-  "description" : "Spawns a Personal Points Power-Up worth 1,250 points (2500 points if Double Points is active).",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6a/Extra_Credit.png/revision/latest"
-}, {
-  "name" : "Power Vacuum",
-  "color" : "Blue",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately, Lasts 4 rounds",
-  "description" : "Power-Ups spawn more often. The drop chance is greatly increased, the normal cap of only 4 drops per round is ignored.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e5/Power_Vacuum_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Firing On All Cylinders",
-  "color" : "Blue",
-  "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 3 full rounds",
-  "description" : "Can fire while sprinting. Similar to the Gung-Ho perk from Multiplayer.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2a/Firing_On_All_Cylinders_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Flavor Hexed",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Activates Immediately",
-  "description" : "Selects a random Mega Gobblegum of any rarity that is not in the player's loadout and awards it to the player",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3f/Flavor_Hexed_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Pop Shocks",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Auto-Activates when attacking Zombies, 5x Activations",
-  "description" : "Melee attacks trigger an electrostatic discharge, electrocuting nearby Zombies.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/ca/Pop_Shocks_GobbleGum_BO3.png/revision/latest"
+  "activation" : "Activates Immediately, Lasts 10 minutes"
 }, {
   "name" : "Projectile Vomiting",
-  "color" : "Blue",
-  "type" : "Whimsical",
-  "activation" : "Activates Immediately, Lasts 5 full rounds",
   "description" : "Zombies you kill with grenades or other large projectiles vomit uncontrollably.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/46/Projectile_Vomiting_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Arsenal Accelerator",
-  "color" : "Green",
-  "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 10 minutes",
-  "description" : "Charge the player's special weapon faster",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/f/f2/Arsenal_Accelerator_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Impatient",
-  "color" : "Orange",
-  "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts until bleedout",
-  "description" : "Respawn near the end of the current round instead of at the start of the next round.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/da/Impatient_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Killing Time",
-  "color" : "Purple",
-  "type" : "UltraRareMega",
-  "activation" : "1x Activation",
-  "description" : "All zombies freeze in place for 20 seconds. If they are shot they will be annihilated when the time is up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8a/Killing_Time_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Bullet Boost",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "2x Activation",
-  "description" : "Re-Pack your current Pack-a-Punched gun (if supported).",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2a/Bullet_Boost_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Shopping Free",
-  "color" : "Green",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately, Lasts 1 minute",
-  "description" : "All purchases are free.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d2/Shopping_Free_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Alchemical Antithesis",
-  "color" : "Purple",
-  "type" : "Normal",
-  "activation" : "Activated, 2x Activations, 60 seconds each",
-  "description" : "Every 10 points earned is instead awarded 1 ammo in the stock of the current weapon",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a4/Alchemical_Antithesis_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Armamental Accomplishment",
-  "color" : "Blue",
-  "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 3 full rounds",
-  "description" : "Switch weapons and recover from performing melee attacks faster. Reload and use items more quickly",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/74/Armamental_Accomplishment_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Arms Grace",
-  "color" : "Orange",
-  "type" : "Default",
-  "activation" : "Activates Immediately, Lasts until next respawn",
-  "description" : "Respawn with the guns the player had when they bled out.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8a/Arms_Grace_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Aftertaste",
-  "color" : "Blue",
-  "type" : "Mega",
-  "activation" : "Activates Immediately, Lasts 3 Rounds",
-  "description" : "Keep all Perks after being revived. This will not keep the player's Quick Revive in solo.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/db/Aftertaste_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "On the House",
-  "color" : "Purple",
-  "type" : "RareMega",
-  "activation" : "1x Activation",
-  "description" : "Spawns a Random Perk Bottle Power Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b8/On_the_House_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Board Games",
-  "color" : "Blue",
-  "type" : "Mega",
-  "activation" : "Activates Immediately, Lasts 5 rounds",
-  "description" : "Fixing one board at a barrier fixes all the boards at that barrier. You only get the points from the first board repaired.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/31/Board_Games_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Self Medication",
-  "color" : "Orange",
-  "type" : "UltraRareMega",
-  "activation" : "Auto-activates by getting a kill in last stand, 3x Activations",
-  "description" : "Auto revive yourself. Keep all your perks. This includes Quick Revive.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/f/f6/Self_Medication_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Licensed Contractor",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "3x Activations",
-  "description" : "Spawns a Carpenter Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/5c/Licensed_Contractor_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Unbearable",
-  "color" : "Orange",
-  "type" : "Mega",
-  "activation" : "Auto-activates when a teddy bear appears in the Mystery box",
-  "description" : "The Mystery box re-spins automatically. The Mystery box will not move for several more uses.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/07/Unbearable_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Tone Death",
-  "color" : "Orange",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/46/Projectile_Vomiting_GobbleGum_BO3.png/revision/latest",
   "type" : "Whimsical",
-  "activation" : "Activates Immediately, activates each tenth zombie kill",
-  "description" : "A set of random silly zombie sounds and death sounds are played instead of the normal ones.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/72/Tone_Death.png/revision/latest"
-}, {
-  "name" : "Head Drama",
   "color" : "Blue",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately, Lasts for the Remainder of the Round",
-  "description" : "Any bullet which hits a zombie will damage its head.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/68/Head_Drama_GobbleGum_BO3.png/revision/latest"
+  "activation" : "Activates Immediately, Lasts 5 full rounds"
 }, {
-  "name" : "Phoenix Up",
-  "color" : "Purple",
+  "name" : "Pop Shocks",
+  "description" : "Melee attacks trigger an electrostatic discharge, electrocuting nearby Zombies.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/ca/Pop_Shocks_GobbleGum_BO3.png/revision/latest",
   "type" : "Mega",
-  "activation" : "1x Activation",
-  "description" : "Revives all teammates. Teammates keep all of their Perks.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/ac/Phoenix_Up_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Perkaholic",
   "color" : "Orange",
-  "type" : "UltraRareMega",
-  "activation" : "Activates Immediately",
-  "description" : "Gives the player all Perk-a-Colas in the map.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/67/Perkaholic_GobbleGum_BO3.png/revision/latest"
+  "activation" : "Auto-Activates when attacking Zombies, 5x Activations"
 }, {
-  "name" : "Fatal Contraption",
-  "color" : "Purple",
+  "name" : "Flavor Hexed",
+  "description" : "Selects a random Mega Gobblegum of any rarity that is not in the player's loadout and awards it to the player",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3f/Flavor_Hexed_GobbleGum_BO3.png/revision/latest",
   "type" : "Mega",
-  "activation" : "2x Activations",
-  "description" : "Spawns a Death Machine Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/4b/Fatal_Contraption_GobbleGum_BO3.png/revision/latest"
+  "color" : "Orange",
+  "activation" : "Activates Immediately"
 }, {
-  "name" : "Undead Man Walking",
-  "color" : "Green",
-  "type" : "RareMega",
-  "activation" : "Activates Immediately, Last 4 minutes",
-  "description" : "Slow down all zombies to shambling speed.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a0/Undead_Man_Walking_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Dead of Nuclear Winter",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "2x Activations",
-  "description" : "Spawns a Nuke Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b3/Dead_of_Nuclear_Winter_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Board To Death",
-  "color" : "Green",
-  "type" : "Mega",
-  "activation" : "Activates Immediately, Lasts 5 minutes",
-  "description" : "Zombies within 15 feet of a repaired board are killed. Does not work for bosses.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/91/Board_To_Death.png/revision/latest"
-}, {
-  "name" : "Coagulant",
-  "color" : "Green",
-  "type" : "Default",
-  "activation" : "Activates Immediately, Lasts 20 minutes",
-  "description" : "Longer bleedout time.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/05/Coagulant_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Sword Flay",
-  "color" : "Green",
+  "name" : "Firing On All Cylinders",
+  "description" : "Can fire while sprinting. Similar to the Gung-Ho perk from Multiplayer.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2a/Firing_On_All_Cylinders_GobbleGum_BO3.png/revision/latest",
   "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 2.5 minutes",
-  "description" : "Melee attacks and any melee weapon will inflict 5x more damage on zombies.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7a/Sword_Flay_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Now You See Me",
-  "color" : "Purple",
-  "type" : "Normal",
-  "activation" : "Activated, 2x Activations, 10 seconds each",
-  "description" : "All zombies will chase the player.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2c/Now_You_See_Me_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Eye Candy",
-  "color" : "Purple",
-  "type" : "Whimsical",
-  "activation" : "Activated, 4x Activations",
-  "description" : "Overrides the colors you see",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6e/Eye_Candy.png/revision/latest"
-}, {
-  "name" : "Danger Closest",
   "color" : "Blue",
-  "type" : "Normal",
-  "activation" : "Activates Immediately, Lasts 3 full rounds",
-  "description" : "Zero explosive damage, similar to PhD Flopper. Damage can still be taken by Insanity Elementals.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/61/Danger_Closest_GobbleGum_BO3.png/revision/latest"
+  "activation" : "Activates Immediately, Lasts 3 full rounds"
 }, {
-  "name" : "Stock Option",
-  "color" : "Green",
-  "type" : "Default",
-  "activation" : "Activates Immediately, Last 2.5 minutes",
-  "description" : "Ammo is taken from the player's stockpile instead of their weapon's magazine",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e5/Stock_Option_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Idle Eyes",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "Activated, 3 activations, 30 seconds each",
-  "description" : "All zombies ignore all players and stand idle.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b5/Idle_Eyes_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Crawl Space",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "5x Activations",
-  "description" : "All nearby zombies become crawlers.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b0/Crawl_Space_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Who's Keeping Score?",
-  "color" : "Purple",
-  "type" : "Mega",
-  "activation" : "2x Activations",
-  "description" : "Spawns a Double Points Power-Up.",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/c5/Who%27s_Keeping_Score%3F_GobbleGum_BO3.png/revision/latest"
-}, {
-  "name" : "Round Robbin'",
-  "color" : "Purple",
+  "name" : "Power Vacuum",
+  "description" : "Power-Ups spawn more often. The drop chance is greatly increased, the normal cap of only 4 drops per round is ignored.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e5/Power_Vacuum_GobbleGum_BO3.png/revision/latest",
   "type" : "UltraRareMega",
-  "activation" : "1x Activation",
-  "description" : "Ends the current round. All players gain 1600 points",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/78/Round_Robbin%27_GobbleGum_BO3.png/revision/latest"
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 4 rounds"
+}, {
+  "name" : "Extra Credit",
+  "description" : "Spawns a Personal Points Power-Up worth 1,250 points (2500 points if Double Points is active).",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6a/Extra_Credit.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "Activated, 4 Activations"
+}, {
+  "name" : "Unquenchable",
+  "description" : "Can buy an extra Perk-a-Cola. The perk slot will be lost should the player go down.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d3/Unquenchable_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Orange",
+  "activation" : "Auto-Activates when the player has 4 Maximum Perks"
+}, {
+  "name" : "I'm Feeling Lucky",
+  "description" : "Spawns a random Power-Up in the map.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8d/I%27m_Feeling_Lucky_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Cache Back",
+  "description" : "Spawns a Max Ammo Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/90/Cache_Back_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "1x Activation"
+}, {
+  "name" : "Profit Sharing",
+  "description" : "Points you earn are also recieved by nearby players and vice versa.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/0f/Profit_Sharing_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 10 minutes"
+}, {
+  "name" : "Respin Cycle",
+  "description" : "Re-spins the weapons in the Mystery Box after it has been activated.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/26/Respin_Cycle_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Fear in Headlights",
+  "description" : "Zombies seen by the player will not move. Players should remember this will not affect zombies that are behind them.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/58/Fear_in_Headlights_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "1x Activation, 2 minutes"
+}, {
+  "name" : "Mind Blown",
+  "description" : "Gib the heads of all the zombies you can see, killing them.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a9/Mind_Blown_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "3x Activations"
+}, {
+  "name" : "Slaughter Slide",
+  "description" : "Create 2 lethal explosions by sliding.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2c/Slaughter_Slide_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Orange",
+  "activation" : "Auto-activates when sliding, 6x Activations"
+}, {
+  "name" : "Anywhere But Here!",
+  "description" : "Instantly teleport to a random location. A concussive blast knocks away any nearby zombies, keeping the player safe.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e0/Anywhere_But_Here.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Purple",
+  "activation" : "Activated, 2x Activations"
+}, {
+  "name" : "Lucky Crit",
+  "description" : "Improves your chances of activating an Alternate Ammo Type, like Turned, Dead Wire, etc.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3e/Lucky_Crit_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 1 full round"
+}, {
+  "name" : "Temporal Gift",
+  "description" : "Power ups last longer (extra 30 seconds).",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7d/Temporal_Gift_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 1 round"
+}, {
+  "name" : "Disorderly Combat",
+  "description" : "Gives a random gun every 10 seconds. It should be noted that if the player uses this while holding a Pack-a-Punched weapon, all subsequent weapons will be Pack-a-Punched as well",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/ad/Disorderly_Combat_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Last for 5 minutes"
+}, {
+  "name" : "Newtonian Negation",
+  "description" : "Zombies killed fall straight up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/da/Newtonian_Negation_GobbleGum_BO3.png/revision/latest",
+  "type" : "Whimsical",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 25 minutes"
+}, {
+  "name" : "Always Done Swiftly",
+  "description" : "Walk faster when aiming. Raise and lower your weapon to aim more quickly.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/31/Always_Done_Swiftly_GobbleGum_BO3.png/revision/latest",
+  "type" : "Default",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 3 Rounds"
+}, {
+  "name" : "Crate Power",
+  "description" : "The next gun taken from the magic box comes Pack-a-Punched.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/3b/Crate_Power_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Orange",
+  "activation" : "Auto-activates next time you take a gun from the magic box"
+}, {
+  "name" : "Soda Fountain",
+  "description" : "Perk purchase limit is ignored. Every perk you buy, a random perk is awarded along with the perk you bought.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/5e/Soda_Fountain.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Orange",
+  "activation" : "Auto-activates when buying a perk, 5 Activations"
+}, {
+  "name" : "Kill Joy",
+  "description" : "Spawns an Insta-Kill Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/73/Kill_Joy_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Immolation Liquidation",
+  "description" : "Spawns a Fire Sale Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/96/Immolation_Liquidation_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "3x Activations"
+}, {
+  "name" : "Near Death Experience",
+  "description" : "Revive, or be revived simply by being near other players. Revived players keep all their perks, including Quick Revive",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/48/Near_Death_Experience_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 3 full rounds"
+}, {
+  "name" : "Reign Drops",
+  "description" : "Spawns all the core power-ups at once",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6a/Reign_Drops_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Purple",
+  "activation" : "Activated, 2 activations"
+}, {
+  "name" : "Ephemeral Enhancement",
+  "description" : "Turns the weapon in the player's hands into the Pack-A-Punched version. Players should be careful to remember that it only lasts for 60 seconds.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7d/Ephemeral_Enhancement_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations, 60 Seconds Each"
+}, {
+  "name" : "Wall Power",
+  "description" : "The next wall weapon purchased becomes Pack-a-Punched.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2d/Wall_Power_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Orange",
+  "activation" : "Activates Immediately, Lasts until the player's next wall-buy gun purchase"
+}, {
+  "name" : "Burned Out",
+  "description" : "The next time the player takes damage, nearby zombies burst into fire.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/80/Burned_Out_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Orange",
+  "activation" : "Activates Immediately, Lasts 2 Hits"
+}, {
+  "name" : "In Plain Sight",
+  "description" : "All zombies ignore the player.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/1c/In_Plain_Sight_GobbleGum_BO3.png/revision/latest",
+  "type" : "Default",
+  "color" : "Purple",
+  "activation" : "Activated, 2x Activations, 10 seconds each"
 }, {
   "name" : "Secret Shopper",
-  "color" : "Green",
-  "type" : "UltraRareMega",
-  "activation" : "Activated Immediately, Lasts 10 minutes",
   "description" : "Any gun wall-buy can be used to buy ammo for any gun. (Note that you cannot buy ammo for Wonder Weapons.)",
-  "imageURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/84/Secret_Shopper_GobbleGum_BO3.png/revision/latest"
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/84/Secret_Shopper_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Green",
+  "activation" : "Activated Immediately, Lasts 10 minutes"
+}, {
+  "name" : "Round Robbin'",
+  "description" : "Ends the current round. All players gain 1600 points",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/78/Round_Robbin%27_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Purple",
+  "activation" : "1x Activation"
+}, {
+  "name" : "Who's Keeping Score?",
+  "description" : "Spawns a Double Points Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/c5/Who%27s_Keeping_Score%3F_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Crawl Space",
+  "description" : "All nearby zombies become crawlers.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b0/Crawl_Space_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "5x Activations"
+}, {
+  "name" : "Idle Eyes",
+  "description" : "All zombies ignore all players and stand idle.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b5/Idle_Eyes_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "Activated, 3 activations, 30 seconds each"
+}, {
+  "name" : "Stock Option",
+  "description" : "Ammo is taken from the player's stockpile instead of their weapon's magazine",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/e5/Stock_Option_GobbleGum_BO3.png/revision/latest",
+  "type" : "Default",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Last 2.5 minutes"
+}, {
+  "name" : "Danger Closest",
+  "description" : "Zero explosive damage, similar to PhD Flopper. Damage can still be taken by Insanity Elementals.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/61/Danger_Closest_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 3 full rounds"
+}, {
+  "name" : "Eye Candy",
+  "description" : "Overrides the colors you see",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/6e/Eye_Candy.png/revision/latest",
+  "type" : "Whimsical",
+  "color" : "Purple",
+  "activation" : "Activated, 4x Activations"
+}, {
+  "name" : "Now You See Me",
+  "description" : "All zombies will chase the player.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2c/Now_You_See_Me_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Purple",
+  "activation" : "Activated, 2x Activations, 10 seconds each"
+}, {
+  "name" : "Sword Flay",
+  "description" : "Melee attacks and any melee weapon will inflict 5x more damage on zombies.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/7a/Sword_Flay_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 2.5 minutes"
+}, {
+  "name" : "Coagulant",
+  "description" : "Longer bleedout time.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/05/Coagulant_GobbleGum_BO3.png/revision/latest",
+  "type" : "Default",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 20 minutes"
+}, {
+  "name" : "Board To Death",
+  "description" : "Zombies within 15 feet of a repaired board are killed. Does not work for bosses.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/9/91/Board_To_Death.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 5 minutes"
+}, {
+  "name" : "Dead of Nuclear Winter",
+  "description" : "Spawns a Nuke Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b3/Dead_of_Nuclear_Winter_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Undead Man Walking",
+  "description" : "Slow down all zombies to shambling speed.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a0/Undead_Man_Walking_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Last 4 minutes"
+}, {
+  "name" : "Fatal Contraption",
+  "description" : "Spawns a Death Machine Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/4/4b/Fatal_Contraption_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "2x Activations"
+}, {
+  "name" : "Perkaholic",
+  "description" : "Gives the player all Perk-a-Colas in the map.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/67/Perkaholic_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Orange",
+  "activation" : "Activates Immediately"
+}, {
+  "name" : "Phoenix Up",
+  "description" : "Revives all teammates. Teammates keep all of their Perks.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/ac/Phoenix_Up_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "1x Activation"
+}, {
+  "name" : "Head Drama",
+  "description" : "Any bullet which hits a zombie will damage its head.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/68/Head_Drama_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts for the Remainder of the Round"
+}, {
+  "name" : "Tone Death",
+  "description" : "A set of random silly zombie sounds and death sounds are played instead of the normal ones.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/72/Tone_Death.png/revision/latest",
+  "type" : "Whimsical",
+  "color" : "Orange",
+  "activation" : "Activates Immediately, activates each tenth zombie kill"
+}, {
+  "name" : "Unbearable",
+  "description" : "The Mystery box re-spins automatically. The Mystery box will not move for several more uses.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/0/07/Unbearable_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Orange",
+  "activation" : "Auto-activates when a teddy bear appears in the Mystery box"
+}, {
+  "name" : "Licensed Contractor",
+  "description" : "Spawns a Carpenter Power-Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/5/5c/Licensed_Contractor_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Purple",
+  "activation" : "3x Activations"
+}, {
+  "name" : "Self Medication",
+  "description" : "Auto revive yourself. Keep all your perks. This includes Quick Revive.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/f/f6/Self_Medication_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Orange",
+  "activation" : "Auto-activates by getting a kill in last stand, 3x Activations"
+}, {
+  "name" : "Board Games",
+  "description" : "Fixing one board at a barrier fixes all the boards at that barrier. You only get the points from the first board repaired.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/31/Board_Games_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 5 rounds"
+}, {
+  "name" : "On the House",
+  "description" : "Spawns a Random Perk Bottle Power Up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/b/b8/On_the_House_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "1x Activation"
+}, {
+  "name" : "Aftertaste",
+  "description" : "Keep all Perks after being revived. This will not keep the player's Quick Revive in solo.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/db/Aftertaste_GobbleGum_BO3.png/revision/latest",
+  "type" : "Mega",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 3 Rounds"
+}, {
+  "name" : "Arms Grace",
+  "description" : "Respawn with the guns the player had when they bled out.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8a/Arms_Grace_GobbleGum_BO3.png/revision/latest",
+  "type" : "Default",
+  "color" : "Orange",
+  "activation" : "Activates Immediately, Lasts until next respawn"
+}, {
+  "name" : "Armamental Accomplishment",
+  "description" : "Switch weapons and recover from performing melee attacks faster. Reload and use items more quickly",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/74/Armamental_Accomplishment_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Blue",
+  "activation" : "Activates Immediately, Lasts 3 full rounds"
+}, {
+  "name" : "Alchemical Antithesis",
+  "description" : "Every 10 points earned is instead awarded 1 ammo in the stock of the current weapon",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/a/a4/Alchemical_Antithesis_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Purple",
+  "activation" : "Activated, 2x Activations, 60 seconds each"
+}, {
+  "name" : "Shopping Free",
+  "description" : "All purchases are free.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d2/Shopping_Free_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Green",
+  "activation" : "Activates Immediately, Lasts 1 minute"
+}, {
+  "name" : "Bullet Boost",
+  "description" : "Re-Pack your current Pack-a-Punched gun (if supported).",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/2/2a/Bullet_Boost_GobbleGum_BO3.png/revision/latest",
+  "type" : "RareMega",
+  "color" : "Purple",
+  "activation" : "2x Activation"
+}, {
+  "name" : "Killing Time",
+  "description" : "All zombies freeze in place for 20 seconds. If they are shot they will be annihilated when the time is up.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/8a/Killing_Time_GobbleGum_BO3.png/revision/latest",
+  "type" : "UltraRareMega",
+  "color" : "Purple",
+  "activation" : "1x Activation"
+}, {
+  "name" : "Impatient",
+  "description" : "Respawn near the end of the current round instead of at the start of the next round.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/da/Impatient_GobbleGum_BO3.png/revision/latest",
+  "type" : "Normal",
+  "color" : "Orange",
+  "activation" : "Activates Immediately, Lasts until bleedout"
 } ]
