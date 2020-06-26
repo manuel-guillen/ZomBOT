@@ -2,6 +2,7 @@ package data.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import listener.Messageable;
+import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.util.Objects;
 
@@ -59,4 +60,15 @@ public abstract class Data implements Messageable {
                 .toLowerCase();
     }
 
+    protected static String nullifyIfInvalidURL(String url) {
+        return EmbedBuilder.URL_PATTERN.matcher(url).matches() ? url : null;
+    }
+
+    @Override
+    public EmbedBuilder createPrebuiltEmbedMessage() {
+        return new EmbedBuilder()
+                .setTitle(name)
+                .setThumbnail(nullifyIfInvalidURL(iconURL))
+                .setDescription(description);
+    }
 }

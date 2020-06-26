@@ -1,7 +1,6 @@
 package data.model;
 
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.util.Map;
 
@@ -56,15 +55,10 @@ public class Gobblegum extends Data {
     }
 
     @Override
-    public void sendAsMessageToChannel(MessageChannel channel) {
-        EmbedBuilder eb = new EmbedBuilder();
-        eb.setTitle(name);
-        eb.setThumbnail(iconURL);
-        eb.setDescription(description);
-        eb.setColor(GOBBLEGUM_COLOR_MAP.get(color));
-        eb.addField("Type", type.toString(),true);
-        eb.addField("Activation", activation,true);
-
-        channel.sendMessage(eb.build()).queue();
+    public EmbedBuilder createPrebuiltEmbedMessage() {
+        return super.createPrebuiltEmbedMessage()
+                .setColor(GOBBLEGUM_COLOR_MAP.get(color))
+                .addField("Type", type.toString(),true)
+                .addField("Activation", activation,true);
     }
 }

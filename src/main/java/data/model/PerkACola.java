@@ -37,18 +37,21 @@ public class PerkACola extends Data {
     }
 
     @Override
-    public void sendAsMessageToChannel(MessageChannel channel) {
-        EmbedBuilder eb = new EmbedBuilder();
-        eb.setTitle(name);
-        eb.setDescription(description);
-        eb.setColor(PERK_COLOR_MAP.get(getSimplifiedName()));
-        eb.addField("Cost", Integer.toString(cost), true);
+    public EmbedBuilder createPrebuiltEmbedMessage() {
+        return super.createPrebuiltEmbedMessage()
+                .setColor(PERK_COLOR_MAP.get(getSimplifiedName()))
+                .addField("Cost", Integer.toString(cost), true);
+    }
 
+    @Override
+    public void sendAsMessageToChannel(MessageChannel channel) {
+        EmbedBuilder eb = createPrebuiltEmbedMessage();
         try {
             File f = new File(this.getClass().getResource(iconURL).toURI());
             eb.setThumbnail("attachment://" + f.getName());
             channel.sendFile(f, f.getName()).embed(eb.build()).queue();
         } catch (URISyntaxException e) {
+            eb.setThumbnail(null);
             channel.sendMessage(eb.build()).queue();
         }
     }
