@@ -1,0 +1,36 @@
+[ {
+  "name" : "Juggernog",
+  "description" : "Increase player's max health from 100% to 250%.",
+  "iconURL" : "/img/juggernog.png",
+  "cost" : 2500
+}, {
+  "name" : "Quick Revive",
+  "description" : "Halves player's revive time in co-op / allows the player to revive themselves in solo. In solo, it does not require power and price is reduced to 500 (except in World at War).",
+  "iconURL" : "/img/quickRevive.png",
+  "cost" : 1500
+}, {
+  "name" : "Speed Cola",
+  "description" : "Halves reload time. Also allows barriers to be built 60% faster (except in Black Ops II).",
+  "iconURL" : "/img/speedCola.png",
+  "cost" : 3000
+}, {
+  "name" : "Stamin-Up",
+  "description" : "Increases movement speed by 7% and doubles sprint duration / endurance.",
+  "iconURL" : "/img/staminUp.png",
+  "cost" : 2000
+}, {
+  "name" : "Deadshot Daiquiri",
+  "description" : "Increases hip fire accuracy by 35%, reduces recoil on all weapons, removes idle sway on sniper rifles, and adjusts aim assist to target the head. Cost is reduced to 1000 on PC due to lack of auto-aim.",
+  "iconURL" : "/img/deadshotDaiquiri.png",
+  "cost" : 1500
+}, {
+  "name" : "Mule Kick",
+  "description" : "Grants the player a third weapon slot",
+  "iconURL" : "/img/muleKick.png",
+  "cost" : 4000
+}, {
+  "name" : "Widow's Wine",
+  "description" : "Gives the player grenades that create a spider web upon detonation, and which automatically detonate safely upon taking damage. Also increases melee damage and gives a random chance to ensnare zombies without consuming grenade ammo.",
+  "iconURL" : "/img/widowsWine.png",
+  "cost" : 4000
+} ]

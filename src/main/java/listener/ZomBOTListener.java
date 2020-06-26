@@ -1,7 +1,7 @@
 package listener;
 
-import data.model.Gobblegum;
-import data.sources.GobblegumDataSource;
+import data.model.Data;
+import data.sources.PerkAColaDataSource;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -16,7 +16,7 @@ public class ZomBOTListener extends ListenerAdapter {
         String message = event.getMessage().getContentRaw();
         if (message.startsWith(PREFIX)) {
             message = message.substring(PREFIX.length()).trim().toLowerCase();
-            Gobblegum g = GobblegumDataSource.getData().get(message.replaceAll("[^A-Za-z0-9 ]", ""));
+            Data g = PerkAColaDataSource.getData().get(message.replaceAll("[^A-Za-z0-9 ]", ""));
             if (g != null)
                 g.sendAsMessageToChannel(event.getChannel());
         }
