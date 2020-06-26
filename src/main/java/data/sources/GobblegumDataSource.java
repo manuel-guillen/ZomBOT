@@ -1,27 +1,21 @@
 package data.sources;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import data.model.Gobblegum;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Map;
 import java.util.Set;
-import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class GobblegumDataSource {
+public class GobblegumDataSource extends DataSource<Gobblegum> {
 
     private static final String SOURCE_URL = "https://callofduty.fandom.com/wiki/GobbleGum";
     private static final String MAIN_ELEMENT_SELECTOR = "h2:has(span#Types) ~ ul > li:has(span[style] > b)";
@@ -29,26 +23,24 @@ public class GobblegumDataSource {
     private static final Pattern DESCR_PATTERN = Pattern.compile("[- ]*([\\w\\s]*\\((?<activation>[^()]+)\\))?(?<description>.+)");
     private static final String FULL_SCALE_SENTINEL = "/latest";
 
-    private static final Collector<Gobblegum, ?, Map<String, Gobblegum>> MAP_COLLECTOR = Collectors.toUnmodifiableMap(Gobblegum::getSimplifiedName, Function.identity());
-    private static final ObjectMapper JSON_MAPPER = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+    private static final GobblegumDataSource THIS = new GobblegumDataSource();
 
-    private static boolean hasConnectedToWebSource = false;
-    private static Elements sourceDocumentElements;
-    private static Elements sourceDocumentThumbnails;
-
-    private static Map<String,Gobblegum> data;
-
-    static {
-        try {
-            populateDataFromWebSource();
-        } catch (IOException e) {
-            throw new RuntimeException("Could not connect to online data source.");
-        }
+    public static GobblegumDataSource getInstance() {
+        return THIS;
     }
 
-    // ===============================================================================================================
+    private boolean hasConnectedToWebSource = false;
+    private Elements sourceDocumentElements;
+    private Elements sourceDocumentThumbnails;
 
-    public static void populateDataFromWebSource() throws IOException {
+    private GobblegumDataSource() {}
+
+    @Override
+    protected TypeReference<Set<Gobblegum>> jsonDeserializeType() {
+        return new TypeReference<>(){};
+    }
+
+    public void populateDataFromWebSource() throws IOException {
         if (!hasConnectedToWebSource) {
             Document doc = Jsoup.connect(SOURCE_URL).get();
             sourceDocumentElements = doc.select(MAIN_ELEMENT_SELECTOR);
@@ -56,24 +48,11 @@ public class GobblegumDataSource {
             hasConnectedToWebSource = true;
         }
         data = sourceDocumentElements.stream()
-                .map(GobblegumDataSource::convertDOMListElementToGobblegumEntry)
+                .map(this::convertDOMListElementToGobblegumEntry)
                 .collect(MAP_COLLECTOR);
     }
 
-    public static void populateDataFromJSONFile(File inputJSONFile) throws IOException {
-        Set<Gobblegum> values = JSON_MAPPER.readValue(inputJSONFile, new TypeReference<>(){});
-        data = values.stream().collect(MAP_COLLECTOR);
-    }
-
-    public static Map<String,Gobblegum> getData() {
-        return data;
-    }
-
-    public static void exportData(File outputJSONFile) throws IOException {
-        JSON_MAPPER.writeValue(outputJSONFile, data.values());
-    }
-
-    private static Gobblegum convertDOMListElementToGobblegumEntry(Element e) {
+    private Gobblegum convertDOMListElementToGobblegumEntry(Element e) {
         Element span = e.child(0);
         String name = span.text();
 

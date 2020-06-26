@@ -1,6 +1,7 @@
 package listener;
 
 import data.model.Data;
+import data.sources.GobblegumDataSource;
 import data.sources.PerkAColaDataSource;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -15,10 +16,20 @@ public class ZomBOTListener extends ListenerAdapter {
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {
         String message = event.getMessage().getContentRaw();
         if (message.startsWith(PREFIX)) {
-            message = message.substring(PREFIX.length()).trim().toLowerCase();
-            Data g = PerkAColaDataSource.getData().get(message.replaceAll("[^A-Za-z0-9 ]", ""));
-            if (g != null)
+            String command = message.substring(PREFIX.length()).trim().toLowerCase().replaceAll("[^A-Za-z0-9 ]", "");
+
+            Data g = GobblegumDataSource.getInstance().getDataMap().get(command);
+            if (g != null) {
                 g.sendAsMessageToChannel(event.getChannel());
+                return;
+            }
+
+            Data p = PerkAColaDataSource.getInstance().getDataMap().get(command);
+            if (p != null) {
+                p.sendAsMessageToChannel(event.getChannel());
+                return;
+            }
+
         }
     }
 }
