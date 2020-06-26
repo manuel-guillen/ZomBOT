@@ -69,6 +69,7 @@ public abstract class Data implements Messageable {
         return new EmbedBuilder()
                 .setTitle(name)
                 .setThumbnail(nullifyIfInvalidURL(iconURL))
-                .setDescription(description);
+                .setDescription(description)
+                .setFooter(getClass().getSimpleName());
     }
 }

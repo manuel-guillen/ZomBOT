@@ -40,7 +40,8 @@ public class PerkACola extends Data {
     public EmbedBuilder createPrebuiltEmbedMessage() {
         return super.createPrebuiltEmbedMessage()
                 .setColor(PERK_COLOR_MAP.get(getSimplifiedName()))
-                .addField("Cost", Integer.toString(cost), true);
+                .addField("Cost", Integer.toString(cost), true)
+                .setFooter("Perk-a-Cola");
     }
 
     @Override
