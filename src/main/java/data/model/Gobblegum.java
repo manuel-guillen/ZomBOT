@@ -1,13 +1,16 @@
 package data.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import listener.Messageable;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.util.Map;
 import java.util.Objects;
 
 import static java.util.Map.entry;
 
-public class Gobblegum {
+public class Gobblegum implements Messageable {
 
     public enum Type {
         Default, Normal, Whimsical, Mega, RareMega, UltraRareMega
@@ -17,7 +20,7 @@ public class Gobblegum {
         Blue, Orange, Green, Purple
     }
 
-    public static final Map<Color, java.awt.Color> GOBBLEGUM_COLOR_MAP = Map.ofEntries(
+    private static final Map<Color, java.awt.Color> GOBBLEGUM_COLOR_MAP = Map.ofEntries(
             entry(Gobblegum.Color.Blue, new java.awt.Color(85, 185, 230)),
             entry(Gobblegum.Color.Green, new java.awt.Color(75, 215, 75)),
             entry(Gobblegum.Color.Purple, new java.awt.Color(155, 90, 190)),
@@ -84,12 +87,20 @@ public class Gobblegum {
     }
 
     @JsonIgnore
-    public java.awt.Color getTrueColor() {
-        return GOBBLEGUM_COLOR_MAP.get(color);
-    }
-
-    @JsonIgnore
     public String getSimplifiedName() {
         return name.replaceAll("[^ \\w]","").toLowerCase();
+    }
+
+    @Override
+    public void sendAsMessageToChannel(MessageChannel channel) {
+        EmbedBuilder eb = new EmbedBuilder();
+        eb.setTitle(name);
+        eb.setThumbnail(imageURL);
+        eb.setDescription(description);
+        eb.setColor(GOBBLEGUM_COLOR_MAP.get(color));
+        eb.addField("Type", type.toString(),true);
+        eb.addField("Activation", activation,true);
+
+        channel.sendMessage(eb.build()).queue();
     }
 }
