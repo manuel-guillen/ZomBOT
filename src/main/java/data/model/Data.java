@@ -56,7 +56,7 @@ public abstract class Data implements Messageable {
     @JsonIgnore
     public String getSimplifiedName() {
         return name.replace('-',' ')
-                .replaceAll("[^ \\w]","")
+                .replaceAll("[^ .\\w]","")
                 .toLowerCase();
     }
 

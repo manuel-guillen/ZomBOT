@@ -16,7 +16,7 @@ public class ZomBOTListener extends ListenerAdapter {
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {
         String message = event.getMessage().getContentRaw();
         if (message.startsWith(PREFIX)) {
-            String command = message.substring(PREFIX.length()).trim().toLowerCase().replaceAll("[^A-Za-z0-9 ]", "");
+            String command = message.substring(PREFIX.length()).trim().toLowerCase().replaceAll("[^A-Za-z0-9. ]", "");
 
             Data g = GobblegumDataSource.getInstance().getDataMap().get(command);
             if (g != null) {

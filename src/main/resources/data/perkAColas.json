@@ -33,4 +33,14 @@
   "description" : "Gives the player grenades that create a spider web upon detonation, and which automatically detonate safely upon taking damage. Also increases melee damage and gives a random chance to ensnare zombies without consuming grenade ammo.",
   "iconURL" : "/img/widowsWine.png",
   "cost" : 4000
+}, {
+  "name" : "Double Tap Root Beer 1.0",
+  "description" : "Increases the rate of fire of all weapons by 33%.",
+  "iconURL" : "/img/doubleTap1.png",
+  "cost" : 2000
+}, {
+  "name" : "Double Tap Root Beer 2.0",
+  "description" : "Increases the rate of fire of all weapons by 33%, as well as doubling the bullet damage.",
+  "iconURL" : "/img/doubleTap2.png",
+  "cost" : 2000
 } ]
