@@ -22,7 +22,9 @@ public class PerkACola extends Data {
             entry("mule kick", new java.awt.Color(44, 102, 26)),
             entry("widows wine", new java.awt.Color(50, 40, 40)),
             entry("double tap root beer 1.0", new java.awt.Color(210, 174, 35)),
-            entry("double tap root beer 2.0", new java.awt.Color(210, 174, 35)));
+            entry("double tap root beer 2.0", new java.awt.Color(210, 174, 35)),
+            entry("ph.d flopper", new java.awt.Color(100, 73, 120))
+    );
 
     private int cost;
 

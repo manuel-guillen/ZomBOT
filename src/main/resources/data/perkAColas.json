@@ -52,4 +52,10 @@
   "iconURL" : "/img/doubleTap2.png",
   "aliases" : [ "double tap", "double tap root beer", "double tap II", "double tap 2", "double tap root beer II", "double tap root beer 2" ],
   "cost" : 2000
+}, {
+  "name" : "Ph.D Flopper",
+  "description" : "Grants the player immunity against explosive and falling damage, and enables the player to trigger a powerful blast by diving to prone from a height that would otherwise damage them.",
+  "iconURL" : "/img/phdFlopper.png",
+  "aliases" : [ "flopper" ],
+  "cost" : 2000
 } ]
