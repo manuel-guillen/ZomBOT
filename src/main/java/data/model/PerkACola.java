@@ -1,11 +1,8 @@
 package data.model;
 
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.awt.*;
-import java.io.File;
-import java.net.URISyntaxException;
 import java.util.Map;
 import java.util.Set;
 
@@ -47,19 +44,6 @@ public class PerkACola extends Data {
                 .setColor(PERK_COLOR_MAP.get(getSimplifiedName()))
                 .addField("Cost", Integer.toString(cost), true)
                 .setFooter("Perk-a-Cola");
-    }
-
-    @Override
-    public void sendAsMessageToChannel(MessageChannel channel) {
-        EmbedBuilder eb = createPrebuiltEmbedMessage();
-        try {
-            File f = new File(this.getClass().getResource(iconURL).toURI());
-            eb.setThumbnail("attachment://" + f.getName());
-            channel.sendFile(f, f.getName()).embed(eb.build()).queue();
-        } catch (URISyntaxException e) {
-            eb.setThumbnail(null);
-            channel.sendMessage(eb.build()).queue();
-        }
     }
 
 }

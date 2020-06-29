@@ -1,0 +1,51 @@
+[ {
+  "name" : "Double Points",
+  "description" : "Doubles point values received during use.",
+  "iconURL" : "/img/powerUps/doublePoints.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Insta-Kill",
+  "description" : "Enables players to instantly kill zombies with a single hit from any weapon.",
+  "iconURL" : "/img/powerUps/instaKill.jpg",
+  "aliases" : [ "insta kill", "instakill" ]
+}, {
+  "name" : "Max Ammo",
+  "description" : "Gives the weapons of all players full reserve ammo, including grenades.",
+  "iconURL" : "/img/powerUps/maxAmmo.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Nuke",
+  "description" : "Kills all zombies on the map at the time of detonation and gives 400 points to every player.",
+  "iconURL" : "/img/powerUps/nuke.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Carpenter",
+  "description" : "Boards up all windows and gives all players 200 points.",
+  "iconURL" : "/img/powerUps/carpenter.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Fire Sale",
+  "description" : "Lowers the price of the Mystery Box from 950 to 10 points for 20 seconds, while making it spawn at every possible location on the map.",
+  "iconURL" : "/img/powerUps/fireSale.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Death Machine",
+  "description" : "Gives the user, for 30 seconds, a Death Machine, a rapid-fire minigun with infinite ammo",
+  "iconURL" : "/img/powerUps/deathMachine.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Random Perk Bottle",
+  "description" : "Grants all non-downed players a free, random Perk-a-Cola, even pass the default four perk limit.",
+  "iconURL" : "/img/powerUps/randomPerkBottle.jpg",
+  "aliases" : [ ]
+}, {
+  "name" : "Bonus Points",
+  "description" : "Awards a random amount of points, either to player or all players.",
+  "iconURL" : "/img/powerUps/bonusPoints.png",
+  "aliases" : [ ]
+}, {
+  "name" : "Bonfire Sale",
+  "description" : "Links all teleporters to the Pack-a-Punch machine and lowers the price of Pack-a-Punching from 5000 to 1000 points and Double Pack-a-Punching to from 2500 to 500 points.",
+  "iconURL" : "/img/powerUps/bonfireSale.jpg",
+  "aliases" : [ ]
+} ]

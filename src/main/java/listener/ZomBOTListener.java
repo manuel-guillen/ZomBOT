@@ -3,6 +3,7 @@ package listener;
 import data.model.Data;
 import data.sources.GobblegumDataSource;
 import data.sources.PerkAColaDataSource;
+import data.sources.PowerUpDataSource;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -15,7 +16,8 @@ public class ZomBOTListener extends ListenerAdapter {
     public static final String PREFIX = "z/";
     private static final List<Set<Data>> SOURCES =  List.of(
             GobblegumDataSource.getInstance().getDataSet(),
-            PerkAColaDataSource.getInstance().getDataSet());
+            PerkAColaDataSource.getInstance().getDataSet(),
+            PowerUpDataSource.getInstance().getDataSet());
 
     @Override
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {

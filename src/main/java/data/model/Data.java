@@ -2,7 +2,10 @@ package data.model;
 
 import listener.Messageable;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.MessageChannel;
 
+import java.io.File;
+import java.net.URISyntaxException;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -71,7 +74,7 @@ public abstract class Data implements Messageable {
     }
 
     protected static String nullifyIfInvalidURL(String url) {
-        return EmbedBuilder.URL_PATTERN.matcher(url).matches() ? url : null;
+        return (url != null && EmbedBuilder.URL_PATTERN.matcher(url).matches()) ? url : null;
     }
 
     @Override
@@ -81,5 +84,22 @@ public abstract class Data implements Messageable {
                 .setThumbnail(nullifyIfInvalidURL(iconURL))
                 .setDescription(description)
                 .setFooter(getClass().getSimpleName());
+    }
+
+    @Override
+    public void sendAsMessageToChannel(MessageChannel channel) {
+        if (iconURL == null || iconURL.isEmpty() || iconURL.startsWith("http")) {
+            channel.sendMessage(createPrebuiltEmbedMessage().build()).queue();
+        } else {
+            EmbedBuilder eb = createPrebuiltEmbedMessage();
+            try {
+                File f = new File(this.getClass().getResource(iconURL).toURI());
+                eb.setThumbnail("attachment://" + f.getName());
+                channel.sendFile(f, f.getName()).embed(eb.build()).queue();
+            } catch (URISyntaxException e) {
+                eb.setThumbnail(null);
+                channel.sendMessage(eb.build()).queue();
+            }
+        }
     }
 }
