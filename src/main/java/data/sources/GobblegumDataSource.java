@@ -9,6 +9,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -49,7 +50,7 @@ public class GobblegumDataSource extends DataSource<Gobblegum> {
         }
         data = sourceDocumentElements.stream()
                 .map(this::convertDOMListElementToGobblegumEntry)
-                .collect(MAP_COLLECTOR);
+                .collect(Collectors.toUnmodifiableSet());
     }
 
     private Gobblegum convertDOMListElementToGobblegumEntry(Element e) {
@@ -102,7 +103,7 @@ public class GobblegumDataSource extends DataSource<Gobblegum> {
         int trimLength = imageURL.lastIndexOf(FULL_SCALE_SENTINEL) + FULL_SCALE_SENTINEL.length();
         imageURL = imageURL.substring(0, trimLength);
 
-        return new Gobblegum(name, color, type, activation, description, imageURL);
+        return new Gobblegum(name, color, type, activation, description, imageURL, Collections.emptySet());
     }
 
     private static String shortenDescription(String description) {

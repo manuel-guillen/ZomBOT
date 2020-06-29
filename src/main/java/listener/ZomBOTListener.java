@@ -7,29 +7,25 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import javax.annotation.Nonnull;
+import java.util.List;
+import java.util.Set;
 
 public class ZomBOTListener extends ListenerAdapter {
 
     public static final String PREFIX = "z/";
+    private static final List<Set<Data>> SOURCES =  List.of(
+            GobblegumDataSource.getInstance().getDataSet(),
+            PerkAColaDataSource.getInstance().getDataSet());
 
     @Override
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {
         String message = event.getMessage().getContentRaw();
         if (message.startsWith(PREFIX)) {
-            String command = message.substring(PREFIX.length()).trim().toLowerCase().replaceAll("[^A-Za-z0-9. ]", "");
+            String command = message.substring(PREFIX.length()).trim().toLowerCase().replaceAll(Data.IGNORE_REGEX, "");
 
-            Data g = GobblegumDataSource.getInstance().getDataMap().get(command);
-            if (g != null) {
-                g.sendAsMessageToChannel(event.getChannel());
-                return;
-            }
-
-            Data p = PerkAColaDataSource.getInstance().getDataMap().get(command);
-            if (p != null) {
-                p.sendAsMessageToChannel(event.getChannel());
-                return;
-            }
-
+            for (Set<Data> source : SOURCES)
+                source.stream().filter(d -> d.matchesAlias(command)).forEach(d -> d.sendAsMessageToChannel(event.getChannel()));
         }
     }
+
 }

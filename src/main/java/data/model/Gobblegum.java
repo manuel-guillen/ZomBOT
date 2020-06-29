@@ -3,6 +3,7 @@ package data.model;
 import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.util.Map;
+import java.util.Set;
 
 import static java.util.Map.entry;
 
@@ -30,8 +31,8 @@ public class Gobblegum extends Data {
         // Needed for deserialization
     }
 
-    public Gobblegum(String name, Color color, Type type, String activation, String description, String iconURL) {
-        super(name, description, iconURL);
+    public Gobblegum(String name, Color color, Type type, String activation, String description, String iconURL, Set<String> aliases) {
+        super(name, description, iconURL, aliases);
         this.type = type;
         this.color = color;
         this.activation = activation;

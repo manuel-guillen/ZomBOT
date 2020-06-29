@@ -7,6 +7,7 @@ import java.awt.*;
 import java.io.File;
 import java.net.URISyntaxException;
 import java.util.Map;
+import java.util.Set;
 
 import static java.util.Map.entry;
 
@@ -16,7 +17,7 @@ public class PerkACola extends Data {
             entry("juggernog", new java.awt.Color(139, 23, 23)),
             entry("quick revive", new java.awt.Color(65, 153, 165)),
             entry("speed cola", new java.awt.Color(5, 141, 39)),
-            entry("stamin up", new java.awt.Color(231, 103, 32)),
+            entry("stamin-up", new java.awt.Color(231, 103, 32)),
             entry("deadshot daiquiri", new java.awt.Color(81, 81, 73)),
             entry("mule kick", new java.awt.Color(44, 102, 26)),
             entry("widows wine", new java.awt.Color(50, 40, 40)),
@@ -29,8 +30,8 @@ public class PerkACola extends Data {
         // Needed for deserialization
     }
 
-    public PerkACola(String name, int cost, String description, String iconURL) {
-        super(name, description, iconURL);
+    public PerkACola(String name, int cost, String description, String iconURL, Set<String> aliases) {
+        super(name, description, iconURL, aliases);
         this.cost = cost;
     }
 
@@ -58,4 +59,5 @@ public class PerkACola extends Data {
             channel.sendMessage(eb.build()).queue();
         }
     }
+
 }

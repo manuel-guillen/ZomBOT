@@ -1,25 +1,30 @@
 package data.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import listener.Messageable;
 import net.dv8tion.jda.api.EmbedBuilder;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public abstract class Data implements Messageable {
+
+    public static final String IGNORE_REGEX = "[^ .\\w-]";
 
     protected String name;
     protected String description;
     protected String iconURL;
+    protected Set<String> aliases;
 
     public Data() {
         // Needed for deserialization
     }
 
-    protected Data(String name, String description, String iconURL) {
+    protected Data(String name, String description, String iconURL, Set<String> aliases) {
         this.name = name;
         this.description = description;
         this.iconURL = iconURL;
+        this.aliases = new HashSet<>(aliases);
     }
 
     public String getName() {
@@ -34,6 +39,10 @@ public abstract class Data implements Messageable {
         return iconURL;
     }
 
+    public Set<String> getAliases() {
+        return aliases;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -45,7 +54,7 @@ public abstract class Data implements Messageable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, description);
+        return Objects.hash(name);
     }
 
     @Override
@@ -53,11 +62,12 @@ public abstract class Data implements Messageable {
         return name + " - " + description;
     }
 
-    @JsonIgnore
-    public String getSimplifiedName() {
-        return name.replace('-',' ')
-                .replaceAll("[^ .\\w]","")
-                .toLowerCase();
+    protected String getSimplifiedName() {
+        return name.replaceAll(IGNORE_REGEX,"").toLowerCase();
+    }
+
+    public boolean matchesAlias(String alias) {
+        return alias.equals(getSimplifiedName()) || aliases.contains(alias);
     }
 
     protected static String nullifyIfInvalidURL(String url) {
