@@ -1,61 +1,61 @@
 [ {
   "name" : "Juggernog",
   "description" : "Increase player's max health from 100% to 250%.",
-  "iconURL" : "/img/juggernog.png",
+  "iconURL" : "/img/perkAColas/juggernog.png",
   "aliases" : [ "jugg" ],
   "cost" : 2500
 }, {
   "name" : "Quick Revive",
   "description" : "Halves player's revive time in co-op / allows the player to revive themselves in solo. In solo, it does not require power and price is reduced to 500 (except in World at War).",
-  "iconURL" : "/img/quickRevive.png",
+  "iconURL" : "/img/perkAColas/quickRevive.png",
   "aliases" : [ ],
   "cost" : 1500
 }, {
   "name" : "Speed Cola",
   "description" : "Halves reload time. Also allows barriers to be built 60% faster (except in Black Ops II).",
-  "iconURL" : "/img/speedCola.png",
+  "iconURL" : "/img/perkAColas/speedCola.png",
   "aliases" : [ ],
   "cost" : 3000
 }, {
   "name" : "Stamin-Up",
   "description" : "Increases movement speed by 7% and doubles sprint duration / endurance.",
-  "iconURL" : "/img/staminUp.png",
+  "iconURL" : "/img/perkAColas/staminUp.png",
   "aliases" : [ "stamin up" ],
   "cost" : 2000
 }, {
   "name" : "Deadshot Daiquiri",
   "description" : "Increases hip fire accuracy by 35%, reduces recoil on all weapons, removes idle sway on sniper rifles, and adjusts aim assist to target the head. Cost is reduced to 1000 on PC due to lack of auto-aim.",
-  "iconURL" : "/img/deadshotDaiquiri.png",
+  "iconURL" : "/img/perkAColas/deadshotDaiquiri.png",
   "aliases" : [ "deadshot" ],
   "cost" : 1500
 }, {
   "name" : "Mule Kick",
   "description" : "Grants the player a third weapon slot",
-  "iconURL" : "/img/muleKick.png",
+  "iconURL" : "/img/perkAColas/muleKick.png",
   "aliases" : [ ],
   "cost" : 4000
 }, {
   "name" : "Widow's Wine",
   "description" : "Gives the player grenades that create a spider web upon detonation, and which automatically detonate safely upon taking damage. Also increases melee damage and gives a random chance to ensnare zombies without consuming grenade ammo.",
-  "iconURL" : "/img/widowsWine.png",
+  "iconURL" : "/img/perkAColas/widowsWine.png",
   "aliases" : [ ],
   "cost" : 4000
 }, {
   "name" : "Double Tap Root Beer 1.0",
   "description" : "Increases the rate of fire of all weapons by 33%.",
-  "iconURL" : "/img/doubleTap1.png",
+  "iconURL" : "/img/perkAColas/doubleTap1.png",
   "aliases" : [ "double tap", "double tap root beer"],
   "cost" : 2000
 }, {
   "name" : "Double Tap Root Beer 2.0",
   "description" : "Increases the rate of fire of all weapons by 33%, as well as doubling the bullet damage.",
-  "iconURL" : "/img/doubleTap2.png",
+  "iconURL" : "/img/perkAColas/doubleTap2.png",
   "aliases" : [ "double tap", "double tap root beer", "double tap II", "double tap 2", "double tap root beer II", "double tap root beer 2" ],
   "cost" : 2000
 }, {
   "name" : "Ph.D Flopper",
   "description" : "Grants the player immunity against explosive and falling damage, and enables the player to trigger a powerful blast by diving to prone from a height that would otherwise damage them.",
-  "iconURL" : "/img/phdFlopper.png",
+  "iconURL" : "/img/perkAColas/phdFlopper.png",
   "aliases" : [ "flopper" ],
   "cost" : 2000
 } ]
