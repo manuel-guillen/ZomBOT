@@ -77,6 +77,10 @@ public abstract class Data implements Messageable {
         return (url != null && EmbedBuilder.URL_PATTERN.matcher(url).matches()) ? url : null;
     }
 
+    protected static String fixEnumString(String enumStr) {
+        return enumStr.replace('_', ' ');
+    }
+
     @Override
     public EmbedBuilder createPrebuiltEmbedMessage() {
         return new EmbedBuilder()

@@ -3,9 +3,6 @@ package data.sources;
 import com.fasterxml.jackson.core.type.TypeReference;
 import data.model.PerkACola;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.Set;
 
 public class PerkAColaDataSource extends DataSource<PerkACola> {
@@ -17,11 +14,7 @@ public class PerkAColaDataSource extends DataSource<PerkACola> {
     }
 
     private PerkAColaDataSource() {
-        try {
-            populateDataFromJSONFile(new File(this.getClass().getResource("/data/perkAColas.json").toURI()));
-        } catch (URISyntaxException | IOException e) {
-            e.printStackTrace();
-        }
+        super("/data/perkAColas.json");
     }
 
     @Override

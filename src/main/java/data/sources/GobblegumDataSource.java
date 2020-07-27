@@ -90,8 +90,8 @@ public class GobblegumDataSource extends DataSource<Gobblegum> {
             case "Normal":              type = Gobblegum.Type.Normal;           break;
             case "Whimsical":           type = Gobblegum.Type.Whimsical;        break;
             case "Mega":                type = Gobblegum.Type.Mega;             break;
-            case "Rare Mega":           type = Gobblegum.Type.RareMega;         break;
-            case "Ultra-Rare Mega":     type = Gobblegum.Type.UltraRareMega;    break;
+            case "Rare Mega":           type = Gobblegum.Type.Rare_Mega;         break;
+            case "Ultra-Rare Mega":     type = Gobblegum.Type.Ultra_Rare_Mega;    break;
             default:                    throw new RuntimeException("Incorrect type read.");
         }
 

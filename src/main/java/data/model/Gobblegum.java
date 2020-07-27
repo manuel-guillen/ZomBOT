@@ -10,7 +10,7 @@ import static java.util.Map.entry;
 public class Gobblegum extends Data {
 
     public enum Type {
-        Default, Normal, Whimsical, Mega, RareMega, UltraRareMega
+        Default, Normal, Whimsical, Mega, Rare_Mega, Ultra_Rare_Mega
     }
 
     public enum Color {
@@ -59,7 +59,7 @@ public class Gobblegum extends Data {
     public EmbedBuilder createPrebuiltEmbedMessage() {
         return super.createPrebuiltEmbedMessage()
                 .setColor(GOBBLEGUM_COLOR_MAP.get(color))
-                .addField("Type", type.toString(),true)
+                .addField("Type", fixEnumString(type.toString()),true)
                 .addField("Activation", activation,true);
     }
 }

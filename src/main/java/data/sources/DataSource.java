@@ -7,6 +7,7 @@ import data.model.Data;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.Set;
 
 public abstract class DataSource<T extends Data> {
@@ -19,9 +20,15 @@ public abstract class DataSource<T extends Data> {
         try {
             populateDataFromWebSource();
         } catch (IOException e) {
-            throw new RuntimeException("Could not connect to online data source.");
-        } catch (RuntimeException e) {
-            // Await implementation in concrete class
+            e.printStackTrace();
+        }
+    }
+
+    protected DataSource(String sourceFile) {
+        try {
+            populateDataFromJSONFile(new File(this.getClass().getResource(sourceFile).toURI()));
+        } catch (URISyntaxException | IOException e) {
+            e.printStackTrace();
         }
     }
 
