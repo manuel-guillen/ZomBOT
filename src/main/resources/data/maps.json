@@ -1,0 +1,46 @@
+[ {
+  "name" : "Nacht der Untoten",
+  "description" : "The 1st zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place in a small building in an abandoned airfield.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ "nacht" ]
+}, {
+  "name" : "Verrückt",
+  "description" : "The 2nd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at Group 935's Asylum Facility in the Wittenau Sanatorium in Berlin.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/cb/Verr%C3%BCckt_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ "verruckt" ]
+}, {
+  "name" : "Shi No Numa",
+  "description" : "The 3rd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at the Group 935/Division 9 Rising Sun Facility in a swamp somewhere in Japanese territory surrounded by dense jungle landscape.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ ]
+}, {
+  "name" : "Der Riese",
+  "description" : "The 4th zombies map, released in *Call of Duty: World at War* and remastered in *Call of Duty: Black Ops*. The map takes place at Group 935's main base of operations known as Waffenfabrik Der Riese near Breslau, Germany.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png/revision/latest",
+  "aliases" : [ ]
+}, {
+  "name" : "Kino der Toten",
+  "description" : "The 5th zombies map, released in *Call of Duty: Black Ops* and remastered in *Call of Duty: Black Ops III*. The map takes place at Group 935's Kino Facility, an abandoned theater in Germany.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/e/ec/Kino_Der_Toten_Menu_Selection_BO3.png/revision/latest?cb=20170617042116&format=original",
+  "aliases" : [ "kino" ]
+}, {
+  "name" : "\"Five\"",
+  "description" : "The 6th zombies map, released in *Call of Duty: Black Ops*. The map takes place inside the Pentagon US Military Defense building in Arlington, VA.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png/revision/latest",
+  "aliases" : [ "five" ]
+}, {
+  "name" : "Dead Ops Arcade",
+  "description" : "The 7th zombies map, released in *Call of Duty: Black Ops*. The map is not a traditional zombies map, but rather a twin-stick top-down shooter arcade based version of the zombies game, starting on a beach.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/7/71/Dead_Ops_Arcade_Menu_Selection_BO.png/revision/latest",
+  "aliases" : [ "dead ops" ]
+}, {
+  "name" : "Ascension",
+  "description" : "The 8th zombies map, released in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place in an abandoned Soviet Cosmodrome in the Soviet Union belonging to the Ascension Group.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d8/Ascension_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ ]
+}, {
+  "name" : "Shadows of Evil",
+  "description" : "The 18th zombies map, released in *Call of Duty: Black Ops III*. The map takes place in the 1940s fictional Morg City.",
+  "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ ]
+} ]
