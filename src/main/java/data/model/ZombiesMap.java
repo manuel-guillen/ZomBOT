@@ -16,14 +16,14 @@ public class ZombiesMap extends Data {
         // Needed for deserialization
     }
 
-    public ZombiesMap(String name, String description, String iconURL, Set<String> aliases) {
-        super(name, description, iconURL, aliases);
+    public ZombiesMap(String name, String description, String imageURL, Set<String> aliases) {
+        super(name, description, imageURL, aliases);
     }
 
     @Override
     public EmbedBuilder createEmbedMessage() {
         return super.createEmbedMessage()
-                .setImage(iconURL)
+                .setImage(iconURL)              // imageUrl stored in super.iconUrl
                 .setThumbnail(null)
                 .setColor(ZOMBIES_MAP_COLOR)
                 .setFooter("Map");
