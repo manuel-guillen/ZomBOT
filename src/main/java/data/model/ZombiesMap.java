@@ -15,7 +15,7 @@ public class ZombiesMap extends Data {
         // Needed for deserialization
     }
 
-    public ZombiesMap(String name, String description, String iconURL, Set<String> aliases, String game) {
+    public ZombiesMap(String name, String description, String iconURL, Set<String> aliases) {
         super(name, description, iconURL, aliases);
     }
 
