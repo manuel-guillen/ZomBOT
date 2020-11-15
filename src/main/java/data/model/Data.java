@@ -15,6 +15,9 @@ public abstract class Data implements Messageable {
 
     public static final String IGNORE_REGEX = "[^ .\\w-]";
 
+    protected static final String MUSIC_NOTE = "\uD83C\uDFB5";
+    protected static final String RADIO = "\uD83D\uDCFB";
+
     protected String name;
     protected String description;
     protected String iconURL;

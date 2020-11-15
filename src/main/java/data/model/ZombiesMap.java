@@ -10,9 +10,6 @@ public class ZombiesMap extends Data {
 
     private static final Color ZOMBIES_MAP_COLOR = new Color(66, 92, 105);
 
-    protected static final String MUSIC_NOTE = "\uD83C\uDFB5";
-    protected static final String RADIO = "\uD83D\uDCFB";
-
     // TODO: Add Easter Egg field
 
     public ZombiesMap() {
