@@ -18,8 +18,8 @@ public class PowerUp extends Data {
     }
 
     @Override
-    public EmbedBuilder createPrebuiltEmbedMessage() {
-        return super.createPrebuiltEmbedMessage()
+    public EmbedBuilder createEmbedMessage() {
+        return super.createEmbedMessage()
                 .setColor(POWER_UP_COLOR)
                 .setFooter("Power-Up");
     }

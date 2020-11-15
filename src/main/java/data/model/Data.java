@@ -83,7 +83,7 @@ public abstract class Data implements Messageable {
     }
 
     @Override
-    public EmbedBuilder createPrebuiltEmbedMessage() {
+    public EmbedBuilder createEmbedMessage() {
         return new EmbedBuilder()
                 .setTitle(name)
                 .setThumbnail(nullifyIfInvalidURL(iconURL))
@@ -94,9 +94,9 @@ public abstract class Data implements Messageable {
     @Override
     public void sendAsMessageToChannel(MessageChannel channel) {
         if (iconURL == null || iconURL.isEmpty() || iconURL.startsWith("http")) {
-            channel.sendMessage(createPrebuiltEmbedMessage().build()).queue(m -> messageSentCallback(m));
+            channel.sendMessage(createEmbedMessage().build()).queue(m -> messageSentCallback(m));
         } else {
-            EmbedBuilder eb = createPrebuiltEmbedMessage();
+            EmbedBuilder eb = createEmbedMessage();
             try {
                 File f = new File(this.getClass().getResource(iconURL).toURI());
                 eb.setThumbnail("attachment://" + f.getName());

@@ -56,8 +56,8 @@ public class Gobblegum extends Data {
     }
 
     @Override
-    public EmbedBuilder createPrebuiltEmbedMessage() {
-        return super.createPrebuiltEmbedMessage()
+    public EmbedBuilder createEmbedMessage() {
+        return super.createEmbedMessage()
                 .setColor(GOBBLEGUM_COLOR_MAP.get(color))
                 .addField("Type", fixEnumString(type.toString()),true)
                 .addField("Activation", activation,true);

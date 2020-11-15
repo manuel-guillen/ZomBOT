@@ -24,8 +24,8 @@ public class ZombiesMap extends Data {
     }
 
     @Override
-    public EmbedBuilder createPrebuiltEmbedMessage() {
-        return super.createPrebuiltEmbedMessage()
+    public EmbedBuilder createEmbedMessage() {
+        return super.createEmbedMessage()
                 .setImage(iconURL)
                 .setThumbnail(null)
                 .setColor(ZOMBIES_MAP_COLOR)

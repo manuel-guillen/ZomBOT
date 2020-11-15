@@ -5,10 +5,10 @@ import net.dv8tion.jda.api.entities.MessageChannel;
 
 public interface Messageable {
 
-    EmbedBuilder createPrebuiltEmbedMessage();
+    EmbedBuilder createEmbedMessage();
 
     default void sendAsMessageToChannel(MessageChannel channel) {
-        channel.sendMessage(createPrebuiltEmbedMessage().build()).queue();
+        channel.sendMessage(createEmbedMessage().build()).queue();
     }
 
 }
