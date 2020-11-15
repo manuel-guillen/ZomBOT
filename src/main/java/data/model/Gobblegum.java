@@ -10,7 +10,7 @@ import static java.util.Map.entry;
 public class Gobblegum extends Data {
 
     public enum Type {
-        Default, Normal, Whimsical, Mega, Rare_Mega, Ultra_Rare_Mega
+        Default, Normal, Whimsical, Mega, RareMega, UltraRareMega
     }
 
     public enum Color {

@@ -34,7 +34,9 @@ public class GobblegumDataSource extends DataSource<Gobblegum> {
     private Elements sourceDocumentElements;
     private Elements sourceDocumentThumbnails;
 
-    private GobblegumDataSource() {}
+    private GobblegumDataSource() {
+        super("/data/gobblegum.json");
+    }
 
     @Override
     protected TypeReference<Set<Gobblegum>> jsonDeserializeType() {
@@ -90,8 +92,8 @@ public class GobblegumDataSource extends DataSource<Gobblegum> {
             case "Normal":              type = Gobblegum.Type.Normal;           break;
             case "Whimsical":           type = Gobblegum.Type.Whimsical;        break;
             case "Mega":                type = Gobblegum.Type.Mega;             break;
-            case "Rare Mega":           type = Gobblegum.Type.Rare_Mega;         break;
-            case "Ultra-Rare Mega":     type = Gobblegum.Type.Ultra_Rare_Mega;    break;
+            case "Rare Mega":           type = Gobblegum.Type.RareMega;         break;
+            case "Ultra-Rare Mega":     type = Gobblegum.Type.UltraRareMega;    break;
             default:                    throw new RuntimeException("Incorrect type read.");
         }
 
