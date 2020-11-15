@@ -2,6 +2,7 @@ package data.model;
 
 import listener.Messageable;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.io.File;
@@ -93,17 +94,22 @@ public abstract class Data implements Messageable {
     @Override
     public void sendAsMessageToChannel(MessageChannel channel) {
         if (iconURL == null || iconURL.isEmpty() || iconURL.startsWith("http")) {
-            channel.sendMessage(createPrebuiltEmbedMessage().build()).queue();
+            channel.sendMessage(createPrebuiltEmbedMessage().build()).queue(m -> messageSentCallback(m));
         } else {
             EmbedBuilder eb = createPrebuiltEmbedMessage();
             try {
                 File f = new File(this.getClass().getResource(iconURL).toURI());
                 eb.setThumbnail("attachment://" + f.getName());
-                channel.sendFile(f, f.getName()).embed(eb.build()).queue();
+                channel.sendFile(f, f.getName()).embed(eb.build()).queue(m -> messageSentCallback(m));
             } catch (URISyntaxException e) {
                 eb.setThumbnail(null);
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessage(eb.build()).queue(m -> messageSentCallback(m));
             }
         }
     }
+
+    protected void messageSentCallback(Message m) {
+        return;
+    }
+
 }
