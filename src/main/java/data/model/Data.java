@@ -82,7 +82,14 @@ public abstract class Data implements Messageable {
     }
 
     protected static String fixEnumString(String enumStr) {
-        return enumStr.replace('_', ' ');
+        return enumStr.replaceAll(
+                String.format("%s|%s|%s",
+                        "(?<=[A-Z])(?=[A-Z][a-z])",
+                        "(?<=[^A-Z])(?=[A-Z])",
+                        "(?<=[A-Za-z])(?=[^A-Za-z])"
+                ),
+                " "
+        );
     }
 
     @Override
