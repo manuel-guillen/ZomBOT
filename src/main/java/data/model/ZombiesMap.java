@@ -31,7 +31,8 @@ public class ZombiesMap extends Data {
 
     @Override
     protected void messageSentCallback(Message m) {
-        m.addReaction(RADIO).queue();
-        m.addReaction(MUSIC_NOTE).queue();
+        if (name.equalsIgnoreCase("Nacht der Untoten")) {
+            m.addReaction(RADIO_REACTION).queue();
+        }
     }
 }

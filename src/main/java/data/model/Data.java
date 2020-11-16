@@ -15,8 +15,8 @@ public abstract class Data implements Messageable {
 
     public static final String IGNORE_REGEX = "[^ .\\w-]";
 
-    protected static final String MUSIC_NOTE = "\uD83C\uDFB5";
-    protected static final String RADIO = "\uD83D\uDCFB";
+    public static final String MUSIC_NOTE_REACTION = "\uD83C\uDFB5";
+    public static final String RADIO_REACTION = "\uD83D\uDCFB";
 
     protected String name;
     protected String description;
@@ -109,7 +109,11 @@ public abstract class Data implements Messageable {
             EmbedBuilder eb = createEmbedMessage();
             try {
                 File f = new File(this.getClass().getResource(iconURL).toURI());
-                eb.setThumbnail("attachment://" + f.getName());
+                if (this instanceof GuideInfo) {
+                    eb.setImage("attachment://" + f.getName());
+                } else {
+                    eb.setThumbnail("attachment://" + f.getName());
+                }
                 channel.sendFile(f, f.getName()).embed(eb.build()).queue(m -> messageSentCallback(m));
             } catch (URISyntaxException e) {
                 eb.setThumbnail(null);
