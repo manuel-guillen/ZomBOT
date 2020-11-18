@@ -4,4 +4,10 @@
   "description" : "In the Help Room, there is a radio underneath the red flag. Knife or shoot the radio, and it will start playing music from the Zombies mode.\n\n[*Black Ops III* only] In the Starting Room, in the corner in front of the HELP door, there is a radio on the ground. Interact with it to hear a recording from Dr. Monty on Nacht Der Untoten.",
   "iconURL" : "/img/guideInfo/nachtRadios.jpg",
   "footer": "Nacht der Untoten  >  Radios"
+}, {
+  "id_str": "nacht-der-untoten-music",
+  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "description" : "[*Black Ops III* only] There are 4 buttons around the map that can be pressed by interacting with them, at which you hear a button press sound. The four buttons are located as follows:\n\n> On the top of the wall/pillar to the left of the Mule Kick machine.\n\n> Under the shelf at the bottom of the steps in the Help room\n\n> On the ceiling above the stairwell in the starting room.\n\n> On the wall opposite to the Argus on the second floor.",
+  "iconURL" : "/img/guideInfo/nachtButtons.jpg",
+  "footer": "Nacht der Untoten  >  Musical Easter Egg"
 } ]

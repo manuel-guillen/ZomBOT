@@ -33,6 +33,7 @@ public class ZombiesMap extends Data {
     protected void messageSentCallback(Message m) {
         if (name.equalsIgnoreCase("Nacht der Untoten")) {
             m.addReaction(RADIO_REACTION).queue();
+            m.addReaction(MUSIC_NOTE_REACTION).queue();
         }
     }
 }
