@@ -39,6 +39,21 @@
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/d/d8/Ascension_Menu_Selection_BO3.png/revision/latest",
   "aliases" : [ ]
 }, {
+  "name" : "Call of the Dead",
+  "description" : "The 9th zombies map, released in *Call of Duty: Black Ops*. The map takes place at an abandoned Group 935 Siberian outpost, which features a shipwrecked freighter, a lighthouse, and a small coast.",
+  "iconURL" : "https://static.wikia.nocookie.net/callofduty/images/7/78/Call_of_the_Dead_Menu_Selection_BO.png/revision/latest",
+  "aliases" : [ ]
+}, {
+  "name" : "Shangri-La",
+  "description" : "The 10th zombies map, released in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at an unknown mountain range temple in the Himalayas.",
+  "iconURL" : "https://static.wikia.nocookie.net/callofduty/images/7/76/Shangri_La_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ "shangri la"]
+}, {
+  "name" : "Moon",
+  "description" : "The 11th zombies map, released in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at Griffin Station, a secret Group 935 facility on the Moon.",
+  "iconURL" : "https://static.wikia.nocookie.net/callofduty/images/4/4a/Moon_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ ]
+}, {
   "name" : "Shadows of Evil",
   "description" : "The 18th zombies map, released in *Call of Duty: Black Ops III*. The map takes place in the 1940s fictional Morg City.",
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png/revision/latest",
