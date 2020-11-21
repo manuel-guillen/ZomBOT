@@ -15,8 +15,6 @@ public class ZombiesMap extends Data {
             MUSIC_NOTE_REACTION, Set.of("nacht der untoten")
     );
 
-    // TODO: Add Easter Egg field
-
     public ZombiesMap() {
         // Needed for deserialization
     }
