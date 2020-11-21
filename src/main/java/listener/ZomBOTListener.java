@@ -15,6 +15,7 @@ import javax.annotation.Nonnull;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class ZomBOTListener extends ListenerAdapter {
 
@@ -24,8 +25,9 @@ public class ZomBOTListener extends ListenerAdapter {
             PerkAColaDataSource.getInstance().getDataSet(),
             PowerUpDataSource.getInstance().getDataSet(),
             ZombiesMapDataSource.getInstance().getDataSet());
-    private static final Set<Data> GUIDE_SOURCE =
-            GuideInfoSource.getInstance().getDataSet();
+    private static final Set<GuideInfo> GUIDE_SOURCE =
+            GuideInfoSource.getInstance().getDataSet()
+                    .stream().map(d -> (GuideInfo)d).collect(Collectors.toSet());
 
     @Override
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {
@@ -53,11 +55,20 @@ public class ZomBOTListener extends ListenerAdapter {
                 if (!embed.isPresent()) return;
 
                 MessageEmbed em = embed.get();
-                if (!em.getFooter().getText().equals("Map")) return;
+                String footer = em.getFooter().getText();
 
-                String responseIdStr = mapToReactResponse(em.getTitle(), event.getReaction().getReactionEmote().getName());
+                String responseIdStr;
+                if (footer.equals("Map"))
+                    responseIdStr = mapReactionResponseId(em.getTitle(), event.getReaction().getReactionEmote().getName());
+                else if (footer.contains(">"))
+                    responseIdStr = guideReactionResponseId(footer, event.getReaction().getReactionEmote().getName());
+                else
+                    responseIdStr = null;
 
-                GUIDE_SOURCE.stream().filter(d -> ((GuideInfo)d).getId_str().equals(responseIdStr)).forEach(d -> {
+                if (responseIdStr == null)
+                    return;
+
+                GUIDE_SOURCE.stream().filter(d -> d.getId_str().startsWith(responseIdStr)).sorted().limit(1).forEach(d -> {
                     d.sendAsMessageToChannel(channel);
                     event.getReaction().removeReaction(user).queue();
                 });
@@ -65,15 +76,25 @@ public class ZomBOTListener extends ListenerAdapter {
         }
     }
 
-    private static String mapToReactResponse(String mapName, String reaction) {
+    private static String mapReactionResponseId(String mapName, String reaction) {
         String mapId = mapName.replaceAll("\"", "")
-                                    .replaceAll(" ", "-")
-                                    .toLowerCase();
+                              .replaceAll(" ", "-")
+                              .toLowerCase();
         switch(reaction) {
             case Data.RADIO_REACTION:       return mapId + "-radio";
             case Data.MUSIC_NOTE_REACTION:  return mapId + "-music";
             default:                        return null;
         }
+    }
+
+    private static String guideReactionResponseId(String guideFooter, String reaction) {
+        if (!reaction.equals(Data.NEXT_REACTION)) return null;
+
+        String id_str = GUIDE_SOURCE.stream().filter(d -> d.getFooter().equals(guideFooter)).findFirst().get().getId_str();
+        int endIndex = id_str.lastIndexOf("-") + 1;
+        int step = Integer.parseInt(id_str.substring(endIndex));
+
+        return id_str.substring(0,endIndex) + (step+1);
     }
 
 }

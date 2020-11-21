@@ -17,6 +17,7 @@ public abstract class Data implements Messageable {
 
     public static final String MUSIC_NOTE_REACTION = "\uD83C\uDFB5";
     public static final String RADIO_REACTION = "\uD83D\uDCFB";
+    public static final String NEXT_REACTION = "\u23E9";
 
     protected String name;
     protected String description;

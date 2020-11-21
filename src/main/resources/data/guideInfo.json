@@ -5,9 +5,30 @@
   "iconURL" : "/img/guideInfo/nachtRadios.jpg",
   "footer": "Nacht der Untoten  >  Radios"
 }, {
-  "id_str": "nacht-der-untoten-music",
+  "id_str": "nacht-der-untoten-music-1",
   "name" : "Musical Easter Egg - *Samantha's Lullaby*",
-  "description" : "[*Black Ops III* only] There are 4 buttons around the map that can be pressed by interacting with them, at which you hear a button press sound. The four buttons are located as follows:\n\n> On the top of the wall/pillar to the left of the Mule Kick machine.\n\n> Under the shelf at the bottom of the steps in the Help room\n\n> On the ceiling above the stairwell in the starting room.\n\n> On the wall opposite to the Argus on the second floor.",
+  "description" : "[*Black Ops III* only] There are 4 buttons around the map that can be pressed by interacting with them, at which you hear a button press sound. The four buttons are located as follows:\n\n> On the top of the wall/pillar to the left of the Mule Kick machine.\n\n> Under the shelf at the bottom of the steps in the Help room\n\n> On the ceiling above the stairwell in the starting room.\n\n> On the wall opposite to the Argus on the second floor.\n\n After activating all 4 buttons, a sound should play.",
   "iconURL" : "/img/guideInfo/nachtButtons.jpg",
-  "footer": "Nacht der Untoten  >  Musical Easter Egg"
+  "footer": "Nacht der Untoten  >  Musical Easter Egg  >  Step 1",
+  "hasNext": true
+}, {
+  "id_str": "nacht-der-untoten-music-2",
+  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "description" : "After activating all 4 buttons and hearing the sound, a Samantha doll appears on the ground in front of the RK5 wall buy. Interact with it to start the search for Samantha dolls.",
+  "iconURL" : "/img/guideInfo/nachtDoll.jpg",
+  "footer": "Nacht der Untoten  >  Musical Easter Egg  >  Step 2",
+  "hasNext": true
+}, {
+  "id_str": "nacht-der-untoten-music-3",
+  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "description" : "Follow the musical sound to locate the Samantha doll playing the music. Find and shoot the Samantha dolls around the map until the music brings you back to the original Samantha doll on the ground in front of the RK5. The Samantha dolls appear in the following locations:\n\n> In the hole in the roof to the left of the Wunderfizz machine\n\n> On a fence post in the farthest window in the Starting Room\n\n> On the pond in the left window barrier of the Starting Room\n\n> On the end of the tanks barrel in the window next to Mule Kick\n\n> On the top floor, on top of a power line post\n\n> On top of a truck in the farthest right Starting Room window\n\n> Next to a power generator on the top floor looking through a window\n\n> In the hole in the ceiling on the bottom floor",
+  "iconURL" : "/img/guideInfo/nachtDolls.jpg",
+  "footer": "Nacht der Untoten  >  Musical Easter Egg  >  Step 3",
+  "hasNext": true
+}, {
+  "id_str": "nacht-der-untoten-music-4",
+  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "description" : "The final step is interacting with the first Samantha doll, now propped up and twirling. The Samantha doll will be raised by a skeleton hand, sink into the ground, and the song *Samantha's Lullaby* will start playing, along with a Max Ammo powerup appearing.",
+  "iconURL" : "/img/guideInfo/nachtFinalDoll.jpg",
+  "footer": "Nacht der Untoten  >  Musical Easter Egg  >  Step 4"
 } ]
