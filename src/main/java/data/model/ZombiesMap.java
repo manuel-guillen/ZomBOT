@@ -19,10 +19,6 @@ public class ZombiesMap extends Data {
         // Needed for deserialization
     }
 
-    public ZombiesMap(String name, String description, String imageURL, Set<String> aliases) {
-        super(name, description, imageURL, aliases);
-    }
-
     @Override
     public EmbedBuilder createEmbedMessage() {
         return super.createEmbedMessage()

@@ -6,7 +6,6 @@ import net.dv8tion.jda.api.entities.Message;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
-import java.util.Collections;
 
 public class GuideInfo extends Data implements Comparable<GuideInfo> {
 
@@ -18,13 +17,6 @@ public class GuideInfo extends Data implements Comparable<GuideInfo> {
 
     public GuideInfo() {
         // Needed for deserialization
-    }
-
-    public GuideInfo(String id_str, String name, String description, String imageURL, String footer, boolean hasNext) {
-        super(name, description, imageURL, Collections.EMPTY_SET);
-        this.id_str = id_str;
-        this.footer = footer;
-        this.hasNext = hasNext;
     }
 
     public String getId_str() {

@@ -3,7 +3,6 @@ package data.model;
 import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.awt.Color;
-import java.util.Set;
 
 public class PowerUp extends Data {
 
@@ -11,10 +10,6 @@ public class PowerUp extends Data {
 
     public PowerUp() {
         // Needed for deserialization
-    }
-
-    public PowerUp(String name, String description, String iconURL, Set<String> aliases) {
-        super(name, description, iconURL, aliases);
     }
 
     @Override

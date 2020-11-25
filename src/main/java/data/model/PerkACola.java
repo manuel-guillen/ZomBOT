@@ -4,7 +4,6 @@ import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.awt.*;
 import java.util.Map;
-import java.util.Set;
 
 import static java.util.Map.entry;
 
@@ -27,11 +26,6 @@ public class PerkACola extends Data {
 
     public PerkACola() {
         // Needed for deserialization
-    }
-
-    public PerkACola(String name, int cost, String description, String iconURL, Set<String> aliases) {
-        super(name, description, iconURL, aliases);
-        this.cost = cost;
     }
 
     public int getCost() {
