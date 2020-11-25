@@ -2,7 +2,12 @@
   "name" : "Nacht der Untoten",
   "description" : "The 1st zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place in a small building in an abandoned airfield.",
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png/revision/latest",
-  "aliases" : [ "nacht" ]
+  "aliases" : [ "nacht" ],
+  "linkMap": {
+    "barrel": "nacht-der-untoten-undone",
+    "music": "nacht-der-untoten-samanthas-lullaby",
+    "radio": "nacht-der-untoten-radios"
+  }
 }, {
   "name" : "Verrückt",
   "description" : "The 2nd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at Group 935's Asylum Facility in the Wittenau Sanatorium in Berlin.",

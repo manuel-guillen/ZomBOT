@@ -8,23 +8,27 @@ import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.io.File;
 import java.net.URISyntaxException;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public abstract class Data {
 
     public static final String IGNORE_REGEX = "[^ .\\w-]";
 
-    public static final String MUSIC_NOTE_REACTION = "\uD83C\uDFB5";
-    public static final String RADIO_REACTION = "\uD83D\uDCFB";
-    public static final String NEXT_REACTION = "\u23E9";
+    public static final Map<String,String> REACTS = Map.of(
+            "radio", "\uD83D\uDCFB",
+            "music", "\uD83C\uDFB5",
+            "barrel", "\uD83D\uDEE2",
+            "next", "\u23E9"
+    );
 
     protected String name;
     protected String description;
     protected String iconURL;
     protected Set<String> aliases;
+
+    protected String id_str;
+    protected Map<String,String> linkMap = Collections.emptyMap();
 
     public Data() {
         // Needed for deserialization
@@ -35,6 +39,15 @@ public abstract class Data {
         this.description = description;
         this.iconURL = iconURL;
         this.aliases = new HashSet<>(aliases);
+        this.linkMap = Collections.emptyMap();
+    }
+
+    public String getId_str() {
+        return id_str != null ? id_str : "";
+    }
+
+    public String reactResponseStrId(String react) {
+        return REACTS.entrySet().stream().filter(e -> e.getValue().equals(react)).map(Map.Entry::getKey).map(key -> linkMap.getOrDefault(key,"")).findFirst().orElse("");
     }
 
     @Override
@@ -62,6 +75,10 @@ public abstract class Data {
 
     public boolean matchesAlias(String alias) {
         return alias.equals(getSimplifiedName()) || aliases.contains(alias);
+    }
+
+    public boolean matchesDescriptors(String name, String description) {
+        return this.name.equals(name) && this.description.equals(description);
     }
 
     protected static String nullifyIfInvalidURL(String url) {
@@ -107,6 +124,11 @@ public abstract class Data {
         }
     }
 
-    protected void messageSentCallback(Message m) { }
+    protected void messageSentCallback(Message m) {
+        linkMap.keySet().stream()
+                .map(reactName -> REACTS.getOrDefault(reactName,""))
+                .filter(react -> !react.isEmpty())
+                .forEach(react -> m.addReaction(react).queue());
+    }
 
 }
