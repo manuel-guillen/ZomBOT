@@ -31,7 +31,7 @@ public class ZombiesMap extends Data {
     @Override
     protected void messageSentCallback(Message m) {
         MAPS_TO_REACT.forEach((react, maps) -> {
-            if (maps.contains(name.toLowerCase()))
+            if (maps.contains(getSimplifiedName()))
                 m.addReaction(react).queue();
         });
     }
