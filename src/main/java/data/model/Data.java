@@ -47,7 +47,7 @@ public abstract class Data {
     }
 
     public String reactResponseStrId(String react) {
-        return REACTS.entrySet().stream().filter(e -> e.getValue().equals(react)).map(Map.Entry::getKey).map(key -> linkMap.getOrDefault(key,"")).findFirst().orElse("");
+        return REACTS.entrySet().stream().filter(e -> e.getValue().equals(react)).map(Map.Entry::getKey).map(key -> linkMap.getOrDefault(key,"")).findFirst().orElse(null);
     }
 
     @Override
