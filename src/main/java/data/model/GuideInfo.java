@@ -1,12 +1,14 @@
 package data.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
 
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class GuideInfo extends Data implements Comparable<GuideInfo> {
 
     private static final Color INFO_COLOR = new Color(66, 92, 105);
@@ -25,11 +27,6 @@ public class GuideInfo extends Data implements Comparable<GuideInfo> {
 
     public String getFooter() {
         return footer;
-    }
-
-    @JsonProperty("hasNext")
-    public boolean hasNext() {
-        return hasNext;
     }
 
     @Override

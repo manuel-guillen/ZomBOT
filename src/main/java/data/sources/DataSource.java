@@ -32,6 +32,7 @@ public abstract class DataSource<T extends Data> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public Set<Data> getDataSet() {
         return (Set<Data>) data;
     }

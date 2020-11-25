@@ -1,5 +1,7 @@
 package data.model;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.util.Map;
@@ -7,6 +9,7 @@ import java.util.Set;
 
 import static java.util.Map.entry;
 
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class Gobblegum extends Data {
 
     public enum Type {
@@ -36,18 +39,6 @@ public class Gobblegum extends Data {
         this.type = type;
         this.color = color;
         this.activation = activation;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public String getActivation() {
-        return activation;
     }
 
     @Override

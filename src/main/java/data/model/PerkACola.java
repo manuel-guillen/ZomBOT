@@ -1,5 +1,7 @@
 package data.model;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import net.dv8tion.jda.api.EmbedBuilder;
 
 import java.awt.*;
@@ -7,6 +9,7 @@ import java.util.Map;
 
 import static java.util.Map.entry;
 
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class PerkACola extends Data {
 
     private static final Map<String, Color> PERK_COLOR_MAP = Map.ofEntries(
@@ -26,10 +29,6 @@ public class PerkACola extends Data {
 
     public PerkACola() {
         // Needed for deserialization
-    }
-
-    public int getCost() {
-        return cost;
     }
 
     @Override

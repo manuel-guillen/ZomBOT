@@ -1,6 +1,7 @@
 package data.model;
 
-import listener.Messageable;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
@@ -11,7 +12,8 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public abstract class Data implements Messageable {
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
+public abstract class Data {
 
     public static final String IGNORE_REGEX = "[^ .\\w-]";
 
@@ -33,22 +35,6 @@ public abstract class Data implements Messageable {
         this.description = description;
         this.iconURL = iconURL;
         this.aliases = new HashSet<>(aliases);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getIconURL() {
-        return iconURL;
-    }
-
-    public Set<String> getAliases() {
-        return aliases;
     }
 
     @Override
@@ -93,7 +79,6 @@ public abstract class Data implements Messageable {
         );
     }
 
-    @Override
     public EmbedBuilder createEmbedMessage() {
         return new EmbedBuilder()
                 .setTitle(name)
@@ -102,10 +87,9 @@ public abstract class Data implements Messageable {
                 .setFooter(getClass().getSimpleName());
     }
 
-    @Override
     public void sendAsMessageToChannel(MessageChannel channel) {
         if (iconURL == null || iconURL.isEmpty() || iconURL.startsWith("http")) {
-            channel.sendMessage(createEmbedMessage().build()).queue(m -> messageSentCallback(m));
+            channel.sendMessage(createEmbedMessage().build()).queue(this::messageSentCallback);
         } else {
             EmbedBuilder eb = createEmbedMessage();
             try {
@@ -115,16 +99,14 @@ public abstract class Data implements Messageable {
                 } else {
                     eb.setThumbnail("attachment://" + f.getName());
                 }
-                channel.sendFile(f, f.getName()).embed(eb.build()).queue(m -> messageSentCallback(m));
+                channel.sendFile(f, f.getName()).embed(eb.build()).queue(this::messageSentCallback);
             } catch (URISyntaxException e) {
                 eb.setThumbnail(null);
-                channel.sendMessage(eb.build()).queue(m -> messageSentCallback(m));
+                channel.sendMessage(eb.build()).queue(this::messageSentCallback);
             }
         }
     }
 
-    protected void messageSentCallback(Message m) {
-        return;
-    }
+    protected void messageSentCallback(Message m) { }
 
 }

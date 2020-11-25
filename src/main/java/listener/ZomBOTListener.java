@@ -52,7 +52,7 @@ public class ZomBOTListener extends ListenerAdapter {
                 if (!author.equals(bot)) return;
 
                 Optional<MessageEmbed> embed = message.getEmbeds().stream().findFirst();
-                if (!embed.isPresent()) return;
+                if (embed.isEmpty()) return;
 
                 MessageEmbed em = embed.get();
                 String footer = em.getFooter().getText();
