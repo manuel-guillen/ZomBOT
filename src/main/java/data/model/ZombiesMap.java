@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class ZombiesMap extends Data {
 
-    private static final Color ZOMBIES_MAP_COLOR = new Color(66, 92, 105);
+    private static final Color ZOMBIES_MAP_COLOR = new Color(52, 90, 104);
     private static final Map<String, Set<String>> MAPS_TO_REACT = Map.of(
             RADIO_REACTION, Set.of("nacht der untoten"),
             MUSIC_NOTE_REACTION, Set.of("nacht der untoten")

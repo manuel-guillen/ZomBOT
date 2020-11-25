@@ -11,7 +11,7 @@ import java.awt.*;
 @JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class GuideInfo extends Data implements Comparable<GuideInfo> {
 
-    private static final Color INFO_COLOR = new Color(66, 92, 105);
+    private static final Color INFO_COLOR = new Color(3, 33, 55);
 
     private String id_str;
     private String footer;
@@ -34,7 +34,8 @@ public class GuideInfo extends Data implements Comparable<GuideInfo> {
         return super.createEmbedMessage()
                 .setThumbnail(null)
                 .setImage(nullifyIfInvalidURL(iconURL))
-                .setFooter(footer);
+                .setFooter(footer)
+                .setColor(INFO_COLOR);
     }
 
     @Override
