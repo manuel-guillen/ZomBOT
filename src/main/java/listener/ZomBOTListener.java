@@ -60,7 +60,7 @@ public class ZomBOTListener extends ListenerAdapter {
                 Optional<Data> dataPoint = DATABASE.stream().filter(d -> d.matchesDescriptors(name, description)).findFirst();
                 if (dataPoint.isEmpty()) return;
 
-                String responseId = dataPoint.get().reactResponseStrId(event.getReactionEmote().getName());
+                String responseId = dataPoint.get().reactResponseStrId(event);
 
                 DATABASE.stream().filter(d -> d.getId_str().equals(responseId)).forEach(d -> {
                     d.sendAsMessageToChannel(channel);

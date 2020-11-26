@@ -3,8 +3,8 @@ package data.model;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.MessageChannel;
+import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.message.guild.react.GuildMessageReactionAddEvent;
 
 import java.io.File;
 import java.net.URISyntaxException;
@@ -46,8 +46,17 @@ public abstract class Data {
         return id_str != null ? id_str : "";
     }
 
-    public String reactResponseStrId(String react) {
-        return REACTS.entrySet().stream().filter(e -> e.getValue().equals(react)).map(Map.Entry::getKey).map(key -> linkMap.getOrDefault(key,"")).findFirst().orElse(null);
+    public String reactResponseStrId(GuildMessageReactionAddEvent event) {
+        Guild server = event.getGuild();
+        MessageReaction.ReactionEmote reactionEmote = event.getReactionEmote();
+
+        String key = "";
+        if (reactionEmote.isEmote())
+            key = server.getEmotes().stream().filter(e -> e.equals(reactionEmote.getEmote())).map(Emote::getName).findFirst().orElse("");
+        else if (reactionEmote.isEmoji())
+            key = REACTS.entrySet().stream().filter(e -> e.getValue().equals(reactionEmote.getEmoji())).map(Map.Entry::getKey).findFirst().orElse("");
+
+        return linkMap.getOrDefault(key,null);
     }
 
     @Override
@@ -125,10 +134,16 @@ public abstract class Data {
     }
 
     protected void messageSentCallback(Message m) {
-        linkMap.keySet().stream()
-                .map(reactName -> REACTS.getOrDefault(reactName,""))
-                .filter(react -> !react.isEmpty())
-                .forEach(react -> m.addReaction(react).queue());
+        for (String key : linkMap.keySet()) {
+            String reactString = REACTS.getOrDefault(key, null);
+            if (reactString != null)
+                m.addReaction(reactString).queue();
+            else {
+                Optional<Emote> reactEmote = m.getGuild().getEmotes().stream().filter(e -> e.getName().equals(key)).findFirst();
+                if (reactEmote.isPresent())
+                    m.addReaction(reactEmote.get()).queue();
+            }
+        }
     }
 
 }

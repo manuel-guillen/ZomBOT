@@ -40,7 +40,23 @@
 }, {
   "id_str": "nacht-der-untoten-undone",
   "name" : "Musical Easter Egg - *Undone*",
-  "description" : "The musical easter egg *Undone* by Kevin Sherwood can be activated, in *Black Ops* and in *Black Ops III*, by shooting the explosive barrels outside the building, visible from the barriers.\n\nIn *Black Ops*, there are three specific explosive barrels that are the only ones required to be shot to activate the musical easter egg.\n\nIn *Black Ops III*, all the explosive barrels must be shot to activate the musical easter egg.",
+  "description" : "The musical easter egg *Undone* by Kevin Sherwood can be activated, in *Black Ops* and in *Black Ops III*, by shooting explosive barrels outside the building, visible from the barriers.",
   "iconURL" : "",
-  "footer": "Nacht der Untoten  >  Undone"
+  "footer": "Nacht der Untoten  >  Undone",
+  "linkMap": {
+    "black_ops": "nacht-der-untoten-undone-blackOps",
+    "black_ops_3": "nacht-der-untoten-undone-blackOps3"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "In *Black Ops*, there are three specific explosive barrels that are the only ones required to be shot to activate the musical easter egg.",
+  "iconURL" : "",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops"
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "In *Black Ops III*, all the explosive barrels must be shot to activate the musical easter egg.",
+  "iconURL" : "",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III"
 } ]
