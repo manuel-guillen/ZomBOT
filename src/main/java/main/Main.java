@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException {
         JDA jda = JDABuilder.createDefault(TOKEN).build();
-        jda.addEventListener(new ZomBOTListener());
+        jda.addEventListener(new ZomBOTListener(jda));
     }
 
 }

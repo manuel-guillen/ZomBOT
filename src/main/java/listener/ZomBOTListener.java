@@ -2,6 +2,7 @@ package listener;
 
 import data.model.Data;
 import data.sources.*;
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.entities.User;
@@ -29,6 +30,12 @@ public class ZomBOTListener extends ListenerAdapter {
 
     private static final Set<Data> DATABASE = SOURCES.stream().collect(HashSet::new, HashSet::addAll, HashSet::addAll);
 
+    private JDA botJDA;
+
+    public ZomBOTListener(JDA jda) {
+        this.botJDA = jda;
+    }
+
     @Override
     public void onGuildMessageReceived(@Nonnull GuildMessageReceivedEvent event) {
         String message = event.getMessage().getContentRaw();
@@ -42,7 +49,7 @@ public class ZomBOTListener extends ListenerAdapter {
     @Override
     public void onGuildMessageReactionAdd(@NotNull GuildMessageReactionAddEvent event) {
         User user = event.getUser(),
-             bot = event.getJDA().getSelfUser();
+             bot = botJDA.getSelfUser();
 
         if (!user.equals(bot)) {
             TextChannel channel = event.getChannel();
