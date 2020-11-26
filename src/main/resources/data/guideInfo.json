@@ -40,7 +40,7 @@
 }, {
   "id_str": "nacht-der-untoten-undone",
   "name" : "Musical Easter Egg - *Undone*",
-  "description" : "The musical easter egg *Undone* by Kevin Sherwood can be activated, in *Black Ops* and in *Black Ops III*, by shooting explosive barrels outside the building, visible from the barriers.",
+  "description" : "The musical easter egg *Undone* by Kevin Sherwood can be activated, in *Black Ops* and in *Black Ops III*, by shooting explosive barrels outside the building, visible from the barriers. How the musical easter egg is activated is dependent on the game.",
   "iconURL" : "",
   "footer": "Nacht der Untoten  >  Undone",
   "linkMap": {
@@ -50,13 +50,85 @@
 }, {
   "id_str": "nacht-der-untoten-undone-blackOps",
   "name" : "Musical Easter Egg - *Undone*",
-  "description" : "In *Black Ops*, there are three specific explosive barrels that are the only ones required to be shot to activate the musical easter egg.",
-  "iconURL" : "",
+  "description" : "In *Black Ops*, there are three specific explosive barrels, each seen from a different window barrier in the Starting room, that are the only ones required to be shot to activate the musical easter egg. Going clockwise around the room, the barrels are located:\n\n> 1. At the window with stairs and the lake, closest to the stairs.\n\n> 2. At the window with mostly trees, one of the two barrels farthest in the background.\n\n> 3. At the window with the vehicle on the right, hidden in the fog near the wheels of the truck in the background.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_1.jpg",
   "footer": "Nacht der Untoten  >  Undone  >  Black Ops"
 }, {
   "id_str": "nacht-der-untoten-undone-blackOps3",
   "name" : "Musical Easter Egg - *Undone*",
-  "description" : "In *Black Ops III*, all the explosive barrels must be shot to activate the musical easter egg.",
-  "iconURL" : "",
+  "description" : "In *Black Ops III*, all 28 explosive barrels around the map must be shot to activate the musical easter egg. For a barrel to be counted, it must blow up, which happens eventually after being shot, or from further shooting it.\n\nStarting at the first window in the Starting room visible upon starting, there are 4 explosive barrels visible:",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-1.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-2"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-2",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "Next window counterclockwise in the Starting room, there are 3 more explosive barrels visible.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-2.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-3"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-3",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "Next window counterclockwise in the Starting room, there are 2 more explosive barrels visible, one of which is a bit harder to see due to being farther in the background and the fog.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-3.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-4"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-4",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "Next window counterclockwise in the Starting room, there are 5 more explosive barrels visible, two of which are hard to distinguish as two separate barrels due to being farther in the background and having an object in the way.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-4.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-5"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-5",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "Next window counterclockwise in the Starting room, there are 6 more explosive barrels visible.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-5.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-6"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-6",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "In the Help room, at the sole barrier at the end of the length of the room, there are 4 more explosive barrels visible.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-6.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-7"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-7",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "In the Upstairs room, there are two windows on the wall with the Argus wall-buy. There is 1 explosive barrel visible from the leftmost window...",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-7.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-8"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-8",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "... and 2 more explosive barrels visible from the rightmost window to the side",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-8.jpg",
+  "footer": "Nacht der Untoten  >  Undone  >  Black Ops III",
+  "linkMap": {
+    "next": "nacht-der-untoten-undone-blackOps3-9"
+  }
+}, {
+  "id_str": "nacht-der-untoten-undone-blackOps3-9",
+  "name" : "Musical Easter Egg - *Undone*",
+  "description" : "Heading to the area above the Starting room at the top of the spiral stairs, looking out to where the first couple of barrels were, there is 1 last explosive barrel only visible from the second floor.",
+  "iconURL" : "/img/guideInfo/nachtBarrels_3-9.jpg",
   "footer": "Nacht der Untoten  >  Undone  >  Black Ops III"
 } ]
