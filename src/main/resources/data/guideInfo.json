@@ -131,4 +131,28 @@
   "description" : "Heading to the area above the Starting room at the top of the spiral stairs, looking out to where the first couple of barrels were, there is 1 last explosive barrel only visible from the second floor.",
   "iconURL" : "/img/guideInfo/nachtBarrels_3-9.jpg",
   "footer": "Nacht der Untoten  >  Undone  >  Black Ops III"
+}, {
+  "id_str": "verruckt-power",
+  "name" : "Turning on the power",
+  "description" : "The power switch to turn on the power in Verrückt is at the room at the opposite side of the map from the spawn location. Turning on the power will make all the perk-a-cola machines and electrical traps usable.",
+  "iconURL" : "/img/guideInfo/verrucktPower.jpg",
+  "footer": "Verrückt  >  Power"
+}, {
+  "id_str": "verruckt-radios",
+  "name" : "Radios",
+  "description" : "On the American/right side (right from spawn), on the balcony upstairs, there is a barrier on the left side of the balcony, through which a radio is sitting on a desk. Shoot the radio, and it will start playing different music from the Zombies mode (somewhat quietly, since it plays as a sound effect, rather than map music).\n\n[*Black Ops III* only] On the German/left side, in the small room at the bottom-right of the stairwell, there is a radio underneath the desk. Interact with it to hear a recording from Dr. Monty on Verrückt.",
+  "iconURL" : "/img/guideInfo/verrucktRadios.jpg",
+  "footer": "Verrückt  >  Radios"
+}, {
+  "id_str": "verruckt-fountain",
+  "name" : "Fountain Statue Easter Egg",
+  "description" : "Looking at the fountain with blood in the middle of the asylum, seen through the windows, dealing enough damage into the fountain, such as detonating a grenade in the fountain, will cause the statue of the fountain to spew blood out of the statue's mouth.",
+  "iconURL" : "/img/guideInfo/verrucktFountain.jpg",
+  "footer": "Verrückt  >  Fountain Statue Easter Egg"
+}, {
+  "id_str": "verruckt-lullaby-for-a-dead-man",
+  "name" : "Musical Easter Egg - *Lullaby for a Dead Man*",
+  "description" : "The musical easter egg *Lullaby for a Dead Man*, by Kevin Sherwood and Elena Siegman, can be activated by going to the second floor on the German/left side (left form spawn), where there is a room with 3 toilets. Flush the left toilet 3 times in a row to start the musical easter egg.",
+  "iconURL" : "/img/guideInfo/verrucktToiletsSide.jpg",
+  "footer": "Verrückt  >  Lullaby for a Dead Man"
 } ]

@@ -4,15 +4,22 @@
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png/revision/latest",
   "aliases" : [ "nacht" ],
   "linkMap": {
-    "barrel": "nacht-der-untoten-undone",
-    "music": "nacht-der-untoten-samanthas-lullaby",
-    "radio": "nacht-der-untoten-radios"
+    "radio": "nacht-der-untoten-radios",
+    "music": "nacht-der-untoten-undone",
+    "samantha_doll": "nacht-der-untoten-samanthas-lullaby"
   }
 }, {
   "name" : "Verrückt",
   "description" : "The 2nd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at Group 935's Asylum Facility in the Wittenau Sanatorium in Berlin.",
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/c/cb/Verr%C3%BCckt_Menu_Selection_BO3.png/revision/latest",
-  "aliases" : [ "verruckt" ]
+  "aliases" : [ "verruckt" ],
+  "linkMap": {
+    "power": "verruckt-power",
+    "radio": "verruckt-radios",
+    "music": "verruckt-lullaby-for-a-dead-man",
+    "samantha_doll": "verruckt-samanthas-lullaby",
+    "fountain": "verruckt-fountain"
+  }
 }, {
   "name" : "Shi No Numa",
   "description" : "The 3rd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at the Group 935/Division 9 Rising Sun Facility in a swamp somewhere in Japanese territory surrounded by dense jungle landscape.",

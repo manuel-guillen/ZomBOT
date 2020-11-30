@@ -19,6 +19,8 @@ public abstract class Data {
             "radio", "\uD83D\uDCFB",
             "music", "\uD83C\uDFB5",
             "barrel", "\uD83D\uDEE2",
+            "fountain", "\u26F2",
+            "power", "\u26A1",
             "next", "\u23E9"
     );
 
