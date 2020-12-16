@@ -56,6 +56,6 @@
   "name" : "Ph.D Flopper",
   "description" : "Grants the player immunity against explosive and falling damage, and enables the player to trigger a powerful blast by diving to prone from a height that would otherwise damage them.",
   "iconURL" : "/img/perkAColas/phdFlopper.png",
-  "aliases" : [ "phd flopper, flopper" ],
+  "aliases" : [ "phd flopper", "flopper"],
   "cost" : 2000
 } ]
