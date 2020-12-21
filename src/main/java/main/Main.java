@@ -8,10 +8,8 @@ import javax.security.auth.login.LoginException;
 
 public class Main {
 
-    private static final String TOKEN = "";
-
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault(TOKEN).build();
+        JDA jda = JDABuilder.createDefault(args[0]).build();
         jda.addEventListener(new ZomBOTListener(jda));
     }
 
