@@ -6,7 +6,7 @@
   "footer": "Nacht der Untoten  >  Radios"
 }, {
   "id_str": "nacht-der-untoten-samanthas-lullaby",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Lullaby*",
   "description" : "[*Black Ops III* only] There are 4 buttons around the map that can be pressed by interacting with them, at which you hear a button press sound. The four buttons are located as follows:\n\n> On the top of the wall/pillar to the left of the Mule Kick machine.\n\n> Under the shelf at the bottom of the steps in the Help room\n\n> On the ceiling above the stairwell in the starting room.\n\n> On the wall opposite to the Argus on the second floor.\n\n After activating all 4 buttons, a thunderous sound should play.",
   "iconURL" : "/img/guideInfo/nachtButtons.jpg",
   "footer": "Nacht der Untoten  >  Samantha's Lullaby  >  Step 1",
@@ -15,7 +15,7 @@
   }
 }, {
   "id_str": "nacht-der-untoten-samanthas-lullaby-2",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Lullaby*",
   "description" : "After activating all 4 buttons and hearing the sound, a Samantha doll appears on the ground in front of the RK5 wall buy. Interact with it to start the search for Samantha dolls.",
   "iconURL" : "/img/guideInfo/nachtDoll.jpg",
   "footer": "Nacht der Untoten  >  Samantha's Lullaby  >  Step 2",
@@ -24,7 +24,7 @@
   }
 }, {
   "id_str": "nacht-der-untoten-samanthas-lullaby-3",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Lullaby*",
   "description" : "Follow the musical sound to locate the Samantha doll playing the music. Find and shoot the Samantha dolls around the map until the music brings you back to the original Samantha doll on the ground in front of the RK5. The Samantha dolls appear in the following locations:\n\n> In the hole in the roof to the left of the Der Wunderfizz machine\n\n> On a fence post in the farthest window in the Starting Room\n\n> On the pond in the left window barrier of the Starting Room\n\n> On the end of the tanks barrel in the window next to Mule Kick\n\n> On the top floor, on top of a power line post\n\n> On top of a truck in the farthest right Starting Room window\n\n> Next to a power generator on the top floor looking through a window\n\n> In the hole in the ceiling on the bottom floor",
   "iconURL" : "/img/guideInfo/nachtDolls.jpg",
   "footer": "Nacht der Untoten  >  Samantha's Lullaby  >  Step 3",
@@ -33,7 +33,7 @@
   }
 }, {
   "id_str": "nacht-der-untoten-samanthas-lullaby-4",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Lullaby*",
   "description" : "Return to the original Samantha doll, now propped up and twirling, and interact with it again. The Samantha doll will be raised by a skeleton hand, sink into the ground, and the song *Samantha's Lullaby* will start playing, along with a Max Ammo appearing.",
   "iconURL" : "/img/guideInfo/nachtFinalDoll.jpg",
   "footer": "Nacht der Untoten  >  Samantha's Lullaby  >  Step 4"
@@ -157,7 +157,7 @@
   "footer": "Verrückt  >  Lullaby for a Dead Man"
 }, {
   "id_str": "verruckt-samanthas-lullaby",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Sorrow*",
   "description" : "[*Black Ops III* only] Go to the second floor on the German/left side (left from spawn), where there is a room with the toilets. Staring from in front of them at them:\n\n> 1. Flush the rightmost toilet 9 times\n> 2. Flush the middle toilet 3 times\n> 3. Flush the leftmost one 5 times.\n\nAfter doing this, a thunderous sound should play.",
   "iconURL" : "/img/guideInfo/verrucktToilets.jpg",
   "footer": "Verrückt  >  Samantha's Lullaby  >  Step 1",
@@ -166,7 +166,7 @@
   }
 }, {
   "id_str": "verruckt-samanthas-lullaby-2",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Sorrow*",
   "description" : "After interacting with the toilets and hearing the sound, a Samantha doll appears on the ground next to the Der Wunderfizz machine. Interact with it to start the search for Samantha dolls.",
   "iconURL" : "/img/guideInfo/verrucktDoll.jpg",
   "footer": "Verrückt  >  Samantha's Lullaby  >  Step 2",
@@ -175,7 +175,7 @@
   }
 }, {
   "id_str": "verruckt-samanthas-lullaby-3",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Sorrow*",
   "description" : "Follow the musical sound to locate the Samantha doll playing the music. Find and shoot the Samantha dolls around the map until the music brings you back to the original Samantha doll on the ground in front of the Der Wunderfizz machine. The Samantha dolls appear in the following locations:\n\n> On the balcony visible from the left window behind Speed Cola.\n\n> In the rightmost toilet in the toilets room on the left side before the power room.\n\n> On a morgue body tray in the medical room near spawn.\n\n> On top of the manequin next to the box location on the top of the stairs on the German/left side.\n\n> In a pot in the kitchen between the power room and the Speed Cola room.\n\n> On the dentist/patient chair near the spawn location.\n\n> On the ceiling, looking through an barrier on the wall in the Mule Kick room.\n\n> In the room above Mule Kick, in the flaming ceiling hole.\n\n> On the top of the fountain statue in the middle of the map.",
   "iconURL" : "/img/guideInfo/verrucktDolls.jpg",
   "footer": "Verrückt  >  Samantha's Lullaby  >  Step 3",
@@ -184,7 +184,7 @@
   }
 }, {
   "id_str": "verruckt-samanthas-lullaby-4",
-  "name" : "Musical Easter Egg - *Samantha's Lullaby*",
+  "name" : "Samantha Dolls Musical Easter Egg - *Samantha's Sorrow*",
   "description" : "Return to the original Samantha doll, now propped up and twirling, and interact with it again. The Samantha doll will be raised by a skeleton hand, sink into the ground, and the song *Samantha's Sorrow* will start playing, along with a Max Ammo appearing.",
   "iconURL" : "/img/guideInfo/verrucktFinalDoll.jpg",
   "footer": "Verrückt  >  Samantha's Lullaby  >  Step 4"
