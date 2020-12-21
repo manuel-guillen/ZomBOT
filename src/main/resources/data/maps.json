@@ -24,7 +24,12 @@
   "name" : "Shi No Numa",
   "description" : "The 3rd zombies map, released in *Call of Duty: World at War*, remastered in *Call of Duty: Black Ops*, and remastered in *Call of Duty: Black Ops III*. The map takes place at the Group 935/Division 9 Rising Sun Facility in a swamp somewhere in Japanese territory surrounded by dense jungle landscape.",
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png/revision/latest",
-  "aliases" : [ ]
+  "aliases" : [ ],
+  "linkMap": {
+    "radio": "shi-no-numa-radios",
+    "music": "shi-no-numa-the-one",
+    "samantha_doll": "shi-no-numa-samanthas-sorrow"
+  }
 }, {
   "name" : "Der Riese",
   "description" : "The 4th zombies map, released in *Call of Duty: World at War* and remastered in *Call of Duty: Black Ops*. The map takes place at Group 935's main base of operations known as Waffenfabrik Der Riese near Breslau, Germany.",
@@ -69,5 +74,10 @@
   "name" : "Shadows of Evil",
   "description" : "The 18th zombies map, released in *Call of Duty: Black Ops III*. The map takes place in the 1940s fictional Morg City.",
   "iconURL" : "https://vignette.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png/revision/latest",
+  "aliases" : [ ]
+}, {
+  "name" : "Die Maschine",
+  "description" : "The 33rd zombies map, released in *Call of Duty: Black Ops Cold War*. The map takes place in Poland, at an abandoned Nazi research facility for a particle-colliding experiment responsible for opening a rift into the Dark Aether.",
+  "iconURL" : "https://static.wikia.nocookie.net/callofduty/images/f/fb/Yard_DieMaschine_BOCW.png/revision/latest",
   "aliases" : [ ]
 } ]
